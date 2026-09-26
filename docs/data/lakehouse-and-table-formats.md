@@ -18,6 +18,8 @@
 
 **Hudi 强调 upsert 与流式。** Hudi 针对基于主键的持续更新优化，其索引可减少需重写的文件数，在频繁小更新的流式场景常优于替代方案（[Apache Iceberg vs Delta Lake vs Apache Hudi 2026](https://reintech.io/blog/apache-iceberg-vs-delta-lake-vs-apache-hudi-2026-table-format-comparison)）。
 
+**跨格式互操作与目录开源。** Apache XTable（孵化中）可在 Hudi、Iceberg、Delta Lake 之间翻译表元数据而无需复制或重写数据文件，典型模式是用 Hudi 摄取、以 Iceberg 暴露给下游引擎（[Apache Hudi vs Apache Iceberg for Streaming Ingestion](https://hudi.apache.org/blog/2026/08/11/hudi-vs-iceberg-for-streaming-ingestion/)）。Databricks 的 Unity Catalog 已开源并归属 LF AI & Data Foundation（[What is an open lakehouse?](https://www.databricks.com/fr/blog/what-open-lakehouse-open-data-standards-explained)）。
+
 ## 核心技术与关键概念
 
 **开放表格式的能力矩阵。** 三者在 ACID、时间旅行上均支持；Iceberg 支持隐藏分区而 Delta/Hudi 不支持；schema 演进方面 Iceberg 与 Delta 完整支持、Hudi 相对受限（[Iceberg vs Delta Lake vs Hudi](https://blog.datalakehouse.help/iceberg/iceberg-open-table-format/)）。行级变更上，Iceberg 提供 COW、MOR 与 deletion vectors（V3），Delta 提供 COW + deletion vectors，Hudi 提供 COW + MOR 与记录索引 upsert；并发上 Iceberg 为乐观（指针交换）、Delta 为基于日志的乐观、Hudi 含非阻塞并发（NBCC）（[Apache Iceberg vs. Delta Lake vs. Hudi](https://e6data.com/blog/apache-iceberg-vs-delta-lake-vs-hudi)）。schema 演进上 Iceberg 按列 ID（完整安全），Delta 通过列映射（3.x），Hudi 为附加/兼容式（较受限）（同上）。
@@ -63,3 +65,5 @@
 - [Delta Lake Liquid Clustering](https://delta.io/blog/liquid-clustering/)
 - [Use liquid clustering for tables](https://docs.databricks.com/aws/en/delta/clustering?language=SQL)
 - [Deletion vectors in Databricks](https://docs.databricks.com/gcp/en/delta/deletion-vectors)
+- [Apache Hudi vs Apache Iceberg for Streaming Ingestion](https://hudi.apache.org/blog/2026/08/11/hudi-vs-iceberg-for-streaming-ingestion/)
+- [What is an open lakehouse? Open data standards explained](https://www.databricks.com/fr/blog/what-open-lakehouse-open-data-standards-explained)

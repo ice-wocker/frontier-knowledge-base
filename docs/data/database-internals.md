@@ -10,7 +10,7 @@
 
 ## 最新进展（2025–2026）
 
-**PostgreSQL 18：异步 I/O 与读性能跃升。** PostgreSQL 18 引入异步 I/O（AIO）子系统，可提升顺序扫描、位图堆扫描、vacuum 等操作的性能；官方称新 I/O 子系统在读存储时带来最高约 3 倍的性能提升（[PostgreSQL 18 Press Kit](https://www.postgresql.org/about/press/presskit18/)、[Release Notes](https://www.postgresql.org/docs/release/18.0/)）。该版本还新增「skip scan」查找支持，并加入 uuidv7() 函数——为 UUID 提供更好的索引与读取性能，以及查询时计算的虚拟生成列（virtual generated columns）（[Release Notes](https://www.postgresql.org/docs/release/18.0/)、[Press Kit](https://www.postgresql.org/about/press/presskit18/)）。
+**PostgreSQL 18：异步 I/O 与读性能跃升。** PostgreSQL 18 引入异步 I/O（AIO）子系统，可提升顺序扫描、位图堆扫描、vacuum 等操作的性能；官方称新 I/O 子系统在读存储时带来最高约 3 倍的性能提升（[PostgreSQL 18 Press Kit](https://www.postgresql.org/about/press/presskit18/)、[Release Notes](https://www.postgresql.org/docs/release/18.0/)）。该 AIO 子系统在 Linux 上可使用 `io_uring`，其它平台提供基于 worker 的实现，`io_method` 可选 `worker`、`io_uring`、`sync`（[Resource Consumption — PostgreSQL](https://www.postgresql.org/docs/current/runtime-config-resource.html)）。该版本还新增「skip scan」查找支持，并加入 uuidv7() 函数——为 UUID 提供更好的索引与读取性能，以及查询时计算的虚拟生成列（virtual generated columns）（[Release Notes](https://www.postgresql.org/docs/release/18.0/)、[Press Kit](https://www.postgresql.org/about/press/presskit18/)）。
 
 **查询引擎走向可组合。** 过去「一个数据库一个单体查询引擎」的设计正在被拆解：Apache DataFusion 提供 Rust 编写的可嵌入、模块化执行引擎；Meta 的 Velox 提供可插入 Presto、Spark 等系统的高性能 C++ 执行内核；Substrait 提供跨语言计划表示格式，使查询计划可在不同引擎间流转而无需重新编译或解析；Apache Arrow 提供内存列式格式以消除组件间序列化开销（[Building Composable Query Engines with Rust Runtimes](https://tuts.alexmercedcoder.dev/2026/2026-05-24-composable-query-engines/)）。
 
@@ -66,3 +66,4 @@
 - [Apache Calcite: A Foundational Framework for Optimized Query Processing Over Heterogeneous Data Sources](https://arxiv.org/pdf/1802.10233.pdf)
 - [PostgreSQL 18 Release Notes](https://www.postgresql.org/docs/release/18.0/)
 - [PostgreSQL 18 Press Kit](https://www.postgresql.org/about/press/presskit18/)
+- [Resource Consumption — PostgreSQL 18 Documentation](https://www.postgresql.org/docs/current/runtime-config-resource.html)

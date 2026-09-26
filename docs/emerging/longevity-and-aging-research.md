@@ -14,6 +14,7 @@
 - **表观遗传时钟与生物年龄**：在 BASE-II 队列中，对 14 项共识衰老生物标志物的比较显示，握力、IL-6、站立平衡、认知健康与表观遗传时钟（DunedinPACE）与死亡率相关，其中 DunedinPACE 关联最强、最一致；由肌肉量、站立平衡与 DunedinPACE 构成的极简模型即达到与全模型相近的区分度（C-index = 0.63）（[Comparing fourteen consensus biomarkers of aging](https://pmc.ncbi.nlm.nih.gov/articles/PMC13063672/)）。
 - **逆转录转座子靶向**：一项首个人体概念验证研究显示，含替诺福韦阿拉芬酰胺（TAF）的抗逆转录病毒方案在健康成人中降低生物年龄：DunedinPACE 下降 −0.061（95% CI −0.11 至 −0.01，p=0.019），PhenoAge 下降 −6.33 岁（95% CI −10.91 至 −1.74）；而 FTC/TDF（Truvada）未见类似获益（[medRxiv 预印本](https://www.medrxiv.org/content/10.64898/2026.03.23.26349105v1.full)、[HIV Medication Reverses Epigenetic Aging Markers](https://mmabrasil.localizer.co/t/hiv-medication-reverses-epigenetic-aging-markers-in-first-human-proof-of-concept-trial/24409)）。
 - **代表性公司的临床推进**：Retro Biosciences 表示其候选 **RTR242** 从适应症选择到首次人体给药仅用 15 个月，公司以 18 亿美元投前估值完成新一轮融资首关，由 4P Capital 领投（[Retro Biosciences: Next Phase](https://www.retro.bio/blog/fundraise-2026)）；Altos Labs 于 2025 年 8 月任命 Joan Mannick 为首席医学官，2025 年 10 月其科学创始人 Belmonte 公开将近中期临床重点转向对废弃供体器官的离体（ex vivo）重编程（[The Anti-Aging Therapeutics Boom](https://research.contrary.com/report/the-anti-aging-therapeutics-boom)）。
+- **衰老干预多靶点临床试验**：以 REPROGRAM 等试验为代表，二甲双胍缓释片、亚精胺、非瑟酮等被用于评估对衰老细胞数量的影响，招募于 2025 年 9 月启动、约 2026 年 6 月结束（[REPROGRAM trial protocol, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0346347)）；Rejuvenate Bio 的 2026 年研究显示全身递送 OSK 基因治疗在哺乳动物模型中的效果（[Universal Publishing](https://universalpublishings.com/index.php/siad/article/download/17885/33585/28491)）。
 
 ## 核心技术与关键概念
 
@@ -71,3 +72,5 @@
 - [Longevity Market Size & Share Analysis (Mordor Intelligence)](https://www.mordorintelligence.com/industry-reports/longevity-market)
 - [Global Longevity Clinic And Precision Anti-Aging Therapy Market](https://www.einpresswire.com/article/943261901/global-longevity-clinic-and-precision-anti-aging-therapy-market-size-forecast-to-cross-26-1-billion-by-2030)
 - [Anti-Aging Supplements Market Report 2026](https://www.researchandmarkets.com/reports/6103871/anti-aging-supplements-market-report)
+- [REPROGRAM trial protocol, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0346347)
+- [Universal Publishing — Cellular Reprogramming, Senolytics and the Dawn of Human Rejuvenation](https://universalpublishings.com/index.php/siad/article/download/17885/33585/28491)

@@ -16,6 +16,8 @@
 
 **流式数据库走向 AI-ready。** RisingWave 3.0 定位为面向 agentic AI 的实时数据平台，引入 Apache Iceberg V3 支持以强化实时湖仓架构、原生 pgvector 摄取以服务 AI 与语义搜索、WebSocket 与 HTTP 连接器实现低延迟事件摄取与动作执行、exactly-once 交付，以及以 DataFusion 作为默认分析引擎（[Announcing RisingWave 3.0](https://risingwave.com/blog/announcing-risingwave-3-0-the-real-time-data-platform-for-agentic-ai/)）。
 
+**Kafka 4.2 与 Redpanda 的能力竞赛。** Apache Kafka 4.2.0 于 2026-02-20 发布，带来生产可用的 share groups、Kafka Streams rebalance GA 与安全增强（[Apache Kafka — Confluent Blog](https://www.confluent.io/ko-kr/blog/category/apache-kafka/)）。Redpanda Streaming 26.1（2026-03-31 GA）宣称推出业界首个「可适应流引擎」，可在 topic 级别平衡性能、安全与效率而无需维护多套专用集群；Redpanda 是 Kafka API 兼容替代，官方称延迟较 Kafka 低最高 10 倍（[Redpanda Streaming 26.1](https://www.redpanda.com/press/redpanda-streaming-26-1-introduces-industrys-first-adaptable-streaming-engine)、[Platform capabilities — Redpanda](https://www.redpanda.com/data-streaming/platform-capabilities)）。
+
 ## 核心技术与关键概念
 
 **CDC。** CDC 从事务日志捕获行级变更并流向下游；主流工具有开源的 Debezium（覆盖 PostgreSQL、MySQL、MongoDB、SQL Server、Oracle，输出到 Kafka topic，数据库支持最广）与流式数据库 RisingWave（原生 PostgreSQL、MySQL，无需 Kafka/Debezium 中间件，直接产出物化视图、Iceberg、Kafka）（[Data Integration for Streaming: Tools, Patterns, and Best Practices (2026)](https://risingwave.com/blog/data-integration-streaming-tools-patterns-2026/)）。RisingWave 可原生读取 PostgreSQL、MySQL、MongoDB 的变更日志而无需中间件，流程为 CREATE SOURCE → CREATE MATERIALIZED VIEW 实时变换 → 查询物化视图或 CREATE SINK 推送下游（[Change Data Capture (CDC) — Complete Guide](https://www.risingwave.com/guides/change-data-capture-guide/)）。
@@ -67,3 +69,6 @@
 - [Change Data Capture (CDC) — Complete Guide](https://www.risingwave.com/guides/change-data-capture-guide/)
 - [PostgreSQL CDC to Streaming SQL: A Complete Tutorial](https://risingwave.com/blog/postgresql-cdc-streaming-sql-tutorial/)
 - [Data Quality in Streaming Pipelines: A Practical Framework](https://streamkap.com/resources-and-guides/data-quality-streaming-pipelines)
+- [Apache Kafka — Confluent Blog](https://www.confluent.io/ko-kr/blog/category/apache-kafka/)
+- [Redpanda Streaming 26.1 Introduces Industry's First Adaptable Streaming Engine](https://www.redpanda.com/press/redpanda-streaming-26-1-introduces-industrys-first-adaptable-streaming-engine)
+- [Platform capabilities — Redpanda Data Streaming](https://www.redpanda.com/data-streaming/platform-capabilities)

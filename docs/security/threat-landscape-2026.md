@@ -14,6 +14,8 @@ Chainalysis《2026 Crypto Crime Report》显示，2025 年链上勒索赎金支�
 
 中国方面，新华网转引的报告显示，2025 年 7 月至 2026 年 6 月，全球活跃勒索病毒组织共 118 个，活跃度排名前 5 的组织发动的攻击占全部攻击的一半以上，集中度较高；同期共有 44 个勒索病毒组织向我国 164 个机构组织发动攻击（[报告显示：近一年来全球勒索病毒攻击事件同比增长四成](https://app.xinhuanet.com/news/article.html?articleId=2026090296ef5572cb224033bf74183b2347a0df)）。CYFIRMA 的月度跟踪则强调，勒索团伙越来越多地通过攻击面向互联网的 VPN 与远程接入设备取得特权立足点，并针对制造业及其依赖企业制造生产系统中断以加大勒索压力（[Tracking Ransomware: July 2026](https://www.cyfirma.com/research/tracking-ransomware-jul-2026/)）。
 
+制造业仍是勒索软件的首要目标：2026 年前七个月针对制造业的勒索事件同比增长 40%，中型制造商因处于大型企业生产线的关键位置而成为重点猎物（[Ransomware Attacks on Manufacturers Rise as Supply Chain Threats Escalate](https://www.news4hackers.com/ransomware-attacks-on-manufacturers-rise-as-supply-chain-threats-escalate/)、[Ransomware Attacks on Manufacturers Surge as Supply Chain Risk Grows](https://radar.offseq.com/threat/ransomware-attacks-on-manufacturers-surge-as-supply-chain-risk-grows-225032fe881f2abc)）。2025 年 9 月捷豹路虎（Jaguar Land Rover）英国工厂一度停产成为标志性案例；物流环节同样脆弱，如 2025 年英国冷链物流商 Peter Green Chilled 遭攻击后无法处理新订单（[Black Kite's 2026 Manufacturing & Distribution Ransomware Report](https://www.unite.ai/black-kites-2026-manufacturing-distribution-ransomware-report-manufacturing-remains-ransomwares-top-target/)）。
+
 ### 入侵入口的结构性变化
 
 Verizon《2026 DBIR》（第 19 版，基于 2025 年数据）指出，软件漏洞利用以 31% 的占比首次超过被盗凭证，成为第一大入侵入口，这是 19 年来首次；报告认为 AI 让已知漏洞被武器化的时间窗口从「数月」压缩到「数小时」（[Vulnerability exploitation top breach entry point, 2026 industry-wide DBIR finds](https://www.verizon.com/about/news/breach-industry-wide-dbir-finds)）。同一份报告还给出多项变化：涉及第三方的泄露占比升至 48%（同比增长约 60%）；移动端社交工程成功率比传统邮件钓鱼高 40%；员工在工作场所使用未获批准「影子 AI」的比例从 15% 跃升至 45%；AI 机器人爬虫流量以每月约 21% 的速度增长，而人类流量几乎持平。

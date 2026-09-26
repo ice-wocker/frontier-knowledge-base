@@ -6,7 +6,7 @@
 
 软件供应链安全关注代码从源码、依赖、构建、打包到分发全链路被篡改的风险。SLSA（Supply-chain Levels for Software Artifacts，读作 "salsa"）是由产业共识建立、可增量采纳的供应链安全指南：生产方据此加固自身链路，消费方据此判断软件包是否可信（[About SLSA](https://slsa.dev/spec/v1.1/about)）。SLSA 官方将典型威胁案例指向 SolarWinds 与 Codecov 事件，并强调风险不只存在于代码本身，而分布在从源码到构建、打包、分发的每个环节——任何环节的弱点都会动摇"你运行的代码就是你扫描过的代码"这一前提（同上）。
 
-SLSA v1.1 当前只包含 Build 一条 track，覆盖 Build Level 1–3，更高等级留待后续版本；Build track 的核心是 provenance（来源证明），描述"谁构建了产物、用了什么流程、输入是什么"，级别越高对构建过程、provenance 与产物被篡改的防护越强（[SLSA specification v1.1](https://slsa.dev/spec/v1.1/)、[SLSA Build Track](https://slsa.dev/spec/v1.1-rc1/zonepage)）。
+SLSA v1.1 当前只包含 Build 一条 track，覆盖 Build Level 1–3，更高等级留待后续版本；Build track 的核心是 provenance（来源证明），描述"谁构建了产物、用了什么流程、输入是什么"，级别越高对构建过程、provenance 与产物被篡改的防护越强（[SLSA specification v1.1](https://slsa.dev/spec/v1.1/)、[SLSA Build Track](https://slsa.dev/spec/v1.1-rc1/zonepage)）。历史上，MOVEit、GoAnywhere 等被广泛部署的托管文件传输工具遭攻陷，确立了「攻陷一个被广泛部署的工具、同时勒索其整个客户群」的攻击模板（[2026 Ransomware Attack Analysis: Trends & Defenses](https://nohack.net/latest-ransomware-attack-analysis-2026/)）。
 
 ## 最新进展（2025–2026）
 

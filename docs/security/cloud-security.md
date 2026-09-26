@@ -12,7 +12,7 @@
 
 Gartner 预测 80% 的企业将整合到 CNAPP——一个在单一数据模型下集成 CSPM（云安全态势管理）、CWPP（云工作负载保护）、CIEM（云基础设施权限管理）与 DSPM（数据安全态势管理）的统一平台，其核心价值主张是攻击路径关联分析（[CSPM vs CWPP: Choosing the Right Cloud Security Tool in 2026](https://cipherssecurity.com/cspm-vs-cwpp-cloud-security-2026/)）。另有分析指出，Gartner 的目标是让企业平均云原生安全厂商数量从 2022 年的 10 家降至 3 家或更少，并预计 CNAPP 细分市场到 2028 年规模达 250 亿美元（[CNAPP in 2026: Why CSPM, CWPP, CIEM, and KSPM Are All Collapsing Into One Platform](https://netguardia.com/security-operations/cloud-security/cnapp-in-2026-why-cspm-cwpp-ciem-and-kspm-are-all-collapsing-into-one-platform/)）。
 
-按 Forrester 在 CWS 报告中的界定，完整的云工作负载安全 = CSPM + CIEM + 云工作负载保护 + IaC 安全 + 容器运行时保护 + 检测与响应，且这些能力应整合到单一平台；即 CWPP 已演进为 CNAPP（[一文读懂：HIDS、EDR、CWPP 到底有什么区别？（2026 版）](https://cloud.tencent.com/developer/article/2750759)）。CNAPP 通常还包含 KSPM（Kubernetes 安全态势）与 IaC 扫描（[CNAPP Explained: Cloud-Native Application Protection Platforms](https://www.graphnodesoftware.com/guides/cnapp-cloud-application-security)）。
+按 Forrester 在 CWS 报告中的界定，完整的云工作负载安全 = CSPM + CIEM + 云工作负载保护 + IaC 安全 + 容器运行时保护 + 检测与响应，且这些能力应整合到单一平台；即 CWPP 已演进为 CNAPP（[一文读懂：HIDS、EDR、CWPP 到底有什么区别？（2026 版）](https://cloud.tencent.com/developer/article/2750759)）。CNAPP 通常还包含 KSPM（Kubernetes 安全态势）与 IaC 扫描（[CNAPP Explained: Cloud-Native Application Protection Platforms](https://www.graphnodesoftware.com/guides/cnapp-cloud-application-security)）。按能力边界，CNAPP 将 CSPM、CWPP、CIEM、API 安全与云检测响应（CDR）整合为统一平台，能力涵盖 API 发现与清单、API 威胁防护（如实时阻断注入与未授权访问）以及工作负载漂移检测与连通性映射（[什么是 CNAPP? — Palo Alto Networks](https://www.paloaltonetworks.cn/cyberpedia/what-is-a-cloud-native-application-protection-platform)、[What is a CNAPP? — Microsoft](https://www.microsoft.com/en-us/security/business/security-101/what-is-cnapp)）。以 Microsoft Defender for Cloud 为例，其三大组件为 CSPM（检查并改进云资源安全态势）、DevSecOps（跨多云与多流水线的代码级安全）与 CWPP（保护 VM、容器、存储、数据库与服务器等工作负载）（[What is Microsoft Defender for Cloud?](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)）。
 
 ### 容器与 Kubernetes 风险
 
@@ -28,7 +28,7 @@ Intruder 的 2026 Cloud Security Index 扫描约 3,000 家组织的错误配置�
 
 ## 核心技术与关键概念
 
-- **CSPM**：持续评估云资源配置与合规基线（CIS、等保等），发现公开存储桶、开放安全组、缺失加密等。
+- **CSPM**：持续评估云资源配置与合规基线（CIS、等保等），发现公开存储桶、开放安全组、缺失加密等。其必要性源于云环境的责任共担模型——厂商负责基础设施安全，客户须自行保障自身配置安全（[What is CSPM?](https://prowler.com/cloud-security-glossary/what-is-cspm)、[What is CSPM — Wiz](https://www.wiz.io/academy/cloud-security/what-is-cloud-security-posture-management-cspm)）。
 - **CWPP**：面向工作负载的运行时保护，覆盖主机、容器、Serverless。
 - **CIEM**：管理「哪个身份在什么条件下可以访问哪些云资源」，解决过度授权与权限升级链（[CSPM vs CWPP in 2026](https://cipherssecurity.com/cspm-vs-cwpp-cloud-security-2026/)）。
 - **CIEM 与权限升级链**：攻击者先通过钓鱼、泄露凭证或 token 窃取获得低权限账户，再枚举 IAM 权限并串联出提升路径（[Cloud Security Threats 2026: What You Must Know](https://cybknow.com/cloud-security-threats-2026/)）。

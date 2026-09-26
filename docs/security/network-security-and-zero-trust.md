@@ -12,7 +12,7 @@
 
 NIST SP 800-207《Zero Trust Architecture》将零信任定义为「从静态的、基于网络的边界转向以用户、资产和资源为中心」的范式，零信任假设不因资产或账户的物理/网络位置（如内网 vs 互联网）或资产所有权而授予隐式信任（[NIST Special Publication 800-207 Zero Trust Architecture](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)）。NIST 国家网络安全卓越中心（NCCoE）已与协作方在实验室环境中构建 19 个可互操作、基于开放标准的零信任实现（「builds」），覆盖增强身份治理（EIG）、软件定义边界（SDP）与微隔离等方法（[NIST Zero Trust Architecture — Introduction](https://pages.nist.gov/zero-trust-architecture/_sources/VolumeA/Introduction.rst)）。
 
-其中，ZSO（Zero Trust Security Orchestrator）负责识别用户、设备、应用、位置、网络类型与威胁存在性，其自适应访问控制检查是零信任模型的基础，并提供基于安全移动端 MFA 的无摩擦单点登录体验（[NIST Zero Trust Architecture — Project Overview](https://pages.nist.gov/zero-trust-architecture/VolumeA/ProjectOverview.html)）。美国政府身份管理指南也将身份生命周期管理（ILM）与 ZTA、IGA 最佳实践对齐，强调「身份即新安全边界」，从静态的基于角色访问转向动态、上下文感知的授权（[Identity Lifecycle Management Playbook — IDManagement.gov](https://www.idmanagement.gov/playbooks/ilm/)）。
+其中，ZSO（Zero Trust Security Orchestrator）负责识别用户、设备、应用、位置、网络类型与威胁存在性，其自适应访问控制检查是零信任模型的基础，并提供基于安全移动端 MFA 的无摩擦单点登录体验（[NIST Zero Trust Architecture — Project Overview](https://pages.nist.gov/zero-trust-architecture/VolumeA/ProjectOverview.html)）。美国政府身份管理指南也将身份生命周期管理（ILM）与 ZTA、IGA 最佳实践对齐，强调「身份即新安全边界」，从静态的基于角色访问转向动态、上下文感知的授权（[Identity Lifecycle Management Playbook — IDManagement.gov](https://www.idmanagement.gov/playbooks/ilm/)）。NIST SP 800-207A 进一步给出多云、云原生应用的零信任访问控制模型（[Search | CSRC — SP 800-207A](https://csrc.nist.gov/publications/sp800)）。美国联邦机构依据第 14028 号行政令（Executive Order 14028）须采用该零信任框架（[Zero Trust Architecture: NIST 800-207 Implementation Guide](https://securitycomplianceguide.com/blog/zero-trust-nist-800-207-guide/)）。落地进度方面，据 Gartner，2026 年将有 10% 的大型企业拥有成熟零信任计划，而 2023 年这一比例不足 1%（[Zero Trust Architecture: NIST 800-207 Implementation Guide](https://securitycomplianceguide.com/blog/zero-trust-nist-800-207-guide/)）。浏览器成为零信任的新战场，CrowdStrike Falcon Secure Access 被 Frost & Sullivan 评为 2026 年零信任浏览器安全全球技术领导者（[Falcon Secure Access Sets the Standard for Zero Trust Browser Security](https://www.crowdstrike.com/en-us/blog/falcon-secure-access-sets-standard-for-zero-trust-security-browser/)）。
 
 ### SASE / SSE 的市场收敛
 
@@ -82,3 +82,4 @@ Cloudflare 报告称，其缓解过的最大规模 DDoS 攻击峰值达 22.2 Tbp
 14. [The record-breaking DDoS attack mitigated by Cloudflare](https://assets-global.website-files.com/68062a5075f93e9a687abc30/68d53ecfce708f389f1fe440_81839581158.pdf)
 15. [DDoS threat report for 2025 Q4 — Cloudflare Radar](https://radar.cloudflare.com/reports/ddos-2025-q4)
 16. [Cloudflare DDoS Threat Report H1 2026](https://blog.cloudflare.com/ddos-threat-report-2026-h1/)
+17. [Zero Trust Architecture: NIST 800-207 Implementation Guide](https://securitycomplianceguide.com/blog/zero-trust-nist-800-207-guide/)

@@ -1,6 +1,6 @@
 # 前沿科技知识库（Frontier Tech Knowledge Base）
 
-> 最后更新：2026-09-26 ｜ 收录 172 篇专题文档 ｜ 全部内容基于公开网络资料整理，逐条附来源链接
+> 最后更新：2026-09-26 ｜ 收录 163 篇专题文档 ｜ 全部内容基于公开网络资料整理，逐条附来源链接
 
 一个纯 Markdown 的前沿科技知识库，覆盖人工智能、硬件与半导体、软件工程、数据工程、网络安全、基础科学、新兴科技、产业与社会等九大领域。所有内容均通过公开网络检索整理而成，关键事实在正文中就地标注来源，每篇文末设有「参考来源」章节列出完整链接清单，便于逐条回溯核验。
 
@@ -64,17 +64,15 @@
 | [Transformer 架构原理](docs/ai/transformer-architecture.md) | Transformer 由 Vaswani 等人在 2017 年论文《Attention Is All You Need》中提出，是此后所有主流大语言模型的基础架构。 |
 | [视频生成与世界模型](docs/ai/video-generation-and-world-models.md) | 视频生成模型在过去两年从「短片段、无声音」快速演进到「多镜头、带原生音频、可交互世界」的阶段。 |
 
-### 二、硬件与半导体（22 篇）
+### 二、硬件与半导体（18 篇）
 
 | 文档 | 内容概要 |
 | --- | --- |
 | [先进封装](docs/hardware/advanced-packaging.md) | 当制程微缩的收益趋缓、单芯片面积受光罩尺寸与良率限制时，先进封装成为继续提升系统算力的主要路径。 |
-| [AI 芯片与加速器](docs/hardware/ai-accelerators.md) | AI 加速器是支撑大模型训练与推理的物理底座。 |
 | [芯片设计与 EDA](docs/hardware/chip-design-and-eda.md) | 一颗现代数字芯片从需求到可制造版图，典型流程为：架构定义 → RTL 设计（Verilog/SystemVerilog/VHDL）→ 功能验证 → 逻辑综合 → DFT（可测性设计）→ 布局布线（Pl… |
 | [算力市场与 GPU 云（Compute Market and GPU Cloud）](docs/hardware/compute-market-and-gpu-cloud.md) | 算力市场指围绕 AI 训练与推理所需加速卡及其配套基础设施形成的供需与交易体系。 |
 | [消费电子与移动硬件](docs/hardware/consumer-and-mobile-hardware.md) | 消费电子与移动硬件涵盖智能手机、PC（含 AI PC）、可穿戴（智能手表、手环、耳机）与 AR 眼镜等品类。 |
 | [数据中心基础设施（Data Center Infrastructure and Power）](docs/hardware/data-center-infrastructure-and-power.md) | AI 训练与推理把数据中心从「IT 房地产」变成「能源与热管理工程」。 |
-| [端侧 AI](docs/hardware/edge-and-on-device-ai.md) | 端侧 AI（On-Device AI）指在手机、PC、可穿戴、车载等终端本地完成模型推理，而非依赖云端。 |
 | [边缘 SoC 与 NPU](docs/hardware/edge-soc-and-npu.md) | 边缘 SoC（System-on-Chip）指把 CPU、GPU、NPU（Neural Processing Unit，神经网络处理单元）、ISP、DSP、内存控制器与基带等功能模块集成到单一芯片… |
 | [FPGA 与可重构计算（FPGA and Reconfigurable Computing）](docs/hardware/fpga-and-reconfigurable-computing.md) | FPGA（Field Programmable Gate Array，现场可编程门阵列）是一类可在出厂后重复编程的集成电路，其核心价值在于把硬件逻辑与数据通路按需定制… |
 | [GPU 架构深入与 CUDA](docs/hardware/gpu-architecture-and-cuda.md) | GPU 最初为图形渲染设计，其核心思路是用大量相对简单的流多处理器（SM，Streaming Multiprocessor）并行执行同一段代码的不同数据（SIMT… |
@@ -84,14 +82,12 @@
 | [AI 集群网络（Networking for AI Clusters）](docs/hardware/networking-for-ai-clusters.md) | AI 集群网络负责把成千上万颗加速卡连接成一个可协同训练与推理的整体，其性能直接决定大规模并行任务的效率。 |
 | [类脑与新型计算（Neuromorphic and Novel Computing）](docs/hardware/neuromorphic-and-novel-computing.md) | 类脑与新型计算（neuromorphic and novel computing）指不依赖传统冯·诺依曼架构与二进制同步时钟的一类计算范式探索，包括神经形态芯片（脉冲神经网络、事件驱动）… |
 | [硅光与光互连（Optical Interconnects and Photonics）](docs/hardware/optical-interconnects-and-photonics.md) | 光互连（optical interconnect）承担数据中心内计算芯片与高速网络之间海量数据的光电转换与传输，是连接算力芯片与网络的关键器件。 |
-| [量子计算](docs/hardware/quantum-computing.md) | 量子计算利用叠加与纠缠等量子特性进行运算，被普遍认为有望在药物与材料模拟、优化、密码分析等领域带来突破。 |
 | [RISC-V 与开放硬件](docs/hardware/risc-v-and-open-hardware.md) | RISC-V 是一套开放、免专利费的精简指令集架构（ISA），任何人可自由实现与扩展，被称为芯片界的"通用标准"，被视为突破芯片生态壁垒、发展自主可控算力的重要路线之一。 |
 | [机器人硬件与执行器](docs/hardware/robot-hardware-and-actuators.md) | 机器人硬件是指支撑机器人运动与感知的物理部件体系，核心包括执行器（actuator，含电机、减速器、编码器）、灵巧手、力觉与触觉传感器、IMU、结构件与电池等。 |
-| [半导体制造前沿](docs/hardware/semiconductor-frontier.md) | 半导体制造是所有前沿计算的物理基础。 |
 | [半导体材料](docs/hardware/semiconductor-materials.md) | 半导体材料分为晶圆制造材料（wafer fab materials）与封装材料（packaging materials）两大类。 |
 | [传感器与 MEMS](docs/hardware/sensors-and-mems.md) | 传感器是把物理量（光、声、压力、加速度、角速度、磁场等）转换为电信号的器件，是消费电子、汽车、工业与机器人感知物理世界的基础。 |
 
-### 三、软件工程（33 篇）
+### 三、软件工程（31 篇）
 
 | 文档 | 内容概要 |
 | --- | --- |
@@ -102,8 +98,6 @@
 | [云原生与 Kubernetes](docs/software/cloud-native-and-kubernetes.md) | 云原生（Cloud Native）已从前沿概念演变为企业基础设施的默认范式。 |
 | [并发与并行（Concurrency and Parallelism）](docs/software/concurrency-and-parallelism.md) | 并发（concurrency）指多个任务在时间上重叠推进，并行（parallelism）指多个任务在同一时刻真正同时执行。 |
 | [系统编程语言：C/C++ 与 Zig、Carbon 等](docs/software/cpp-and-systems-languages.md) | 系统编程语言指直接面向操作系统内核、嵌入式、编译器、数据库与高性能基础设施的语言家族，长期以 C 与 C++ 为核心。 |
-| [网络安全前沿](docs/software/cybersecurity.md) | 2025–2026 年网络安全呈现「攻击面收敛于 AI 与供应链、防御重心转向身份与零信任」的双向挤压。 |
-| [数据库与数据平台](docs/software/databases-and-data-platforms.md) | 2025–2026 年数据领域的核心变化有两个：AI 原生（AI-native）成为数据库的一等设计目标，以及湖仓一体与开放表格式的融合。 |
 | [桌面与跨平台应用](docs/software/desktop-and-cross-platform-apps.md) | 桌面应用开发主要分为三条路线：Web 技术栈封装（Electron、Tauri）、自绘 UI 跨平台框架（Flutter Desktop、Qt… |
 | [开发体验与工具（Developer Experience and Tooling）](docs/software/developer-experience-and-tooling.md) | 开发体验（Developer Experience，DX）指开发者在使用工具链、平台与流程时感受到的效率、认知负荷与满意度。 |
 | [领域驱动设计（DDD）](docs/software/domain-driven-design.md) | 领域驱动设计（Domain-Driven Design, DDD）由 Eric Evans 提出，核心是在复杂业务系统中以领域模型为中心，让软件结构与业务概念对齐。 |
@@ -186,7 +180,7 @@
 | [量子信息科学](docs/science/quantum-information-science.md) | 量子信息科学研究如何利用叠加、纠缠与测量等量子特性处理信息，涵盖量子计算、量子通信/量子网络与量子传感/计量三大方向。 |
 | [统计学与因果推断](docs/science/statistics-and-causal-inference.md) | 统计学提供从有限样本推断总体、量化不确定性与设计实验的工具； |
 
-### 七、新兴科技（26 篇）
+### 七、新兴科技（23 篇）
 
 | 文档 | 内容概要 |
 | --- | --- |
@@ -194,7 +188,6 @@
 | [AI 制药（AI Drug Discovery）](docs/emerging/ai-drug-discovery.md) | AI 制药指把机器学习、生成式模型、蛋白质结构预测与自动化实验室（干湿闭环）等技术，用于靶点发现与验证、分子生成与优化、成药性与毒性预测、临床方案设计等环节，目标是缩短研发周期、降低失败率与成本。 |
 | [配送机器人与物流自动化（Autonomous Delivery and Logistics Robots）](docs/emerging/autonomous-delivery-and-logistics-robots.md) | 配送机器人与物流自动化覆盖两个主要方向：一是面向末端配送的无人配送车（无人城配车、配送机器人），二是面向仓内的仓储机器人（AGV/AMR、货到人系统、自动化立体库）与无人仓。 |
 | [自动驾驶](docs/emerging/autonomous-driving.md) | 自动驾驶（Autonomous Driving）指车辆在无需或仅需少量人类干预下完成感知、决策与控制的技术体系。 |
-| [生物科技与合成生物学](docs/emerging/biotech-and-synthetic-biology.md) | 生物科技（Biotechnology）与合成生物学（Synthetic Biology）正在被 AI 深度重塑。 |
 | [脑机接口（Brain-Computer Interfaces, BCI）](docs/emerging/brain-computer-interfaces.md) | 脑机接口（Brain-Computer Interface, BCI）通过采集、解码神经信号并转换为对外部设备的控制指令，或对神经系统进行刺激，建立大脑与外部设备之间的直接通信通道。 |
 | [碳捕集与气候适应（Carbon Capture & Climate Adaptation）](docs/emerging/carbon-capture-and-climate-adaptation.md) | 碳捕集、利用与封存（CCUS）及二氧化碳移除（CDR，含直接空气捕集 DAC）被视为实现净零排放的补充手段； |
 | [数字健康与医疗器械（Digital Health and Medical Devices）](docs/emerging/digital-health-and-medical-devices.md) | 数字健康（digital health）涵盖远程医疗、可穿戴健康监测、数字疗法、医疗软件与 AI 医疗器械等。 |
@@ -207,13 +200,11 @@
 | [工业机器人与自动化（Industrial Robotics and Automation）](docs/emerging/industrial-robotics-and-automation.md) | 工业机器人指面向制造业的自动化操作系统，主要包括多关节机器人、SCARA、直角坐标、并联（Delta）机器人与协作机器人（cobot）。 |
 | [长寿与抗衰老研究（Longevity and Aging Research）](docs/emerging/longevity-and-aging-research.md) | 长寿与抗衰老研究（longevity / geroscience）以「衰老是可干预的生物学过程」为前提，试图通过药理学或基因干预延缓衰老、延长健康寿命（healthspan）。 |
 | [新能源与气候科技](docs/emerging/new-energy-and-climate-tech.md) | 新能源与气候科技涵盖光伏、储能、电动汽车与电池供应链、电网与虚拟电厂、绿氢、核能（含小型模块化反应堆 SMR 与聚变）、碳捕集（DAC）以及相关政策框架。 |
-| [机器人与具身智能](docs/emerging/robotics-and-embodied-ai.md) | 具身智能（Embodied AI）指让智能体通过物理身体与环境交互、感知并执行任务的技术方向，其核心载体是人形机器人（Humanoid Robot）以及各类通用操作机器人。 |
 | [火箭与航天发射](docs/emerging/rockets-and-space-launch.md) | 火箭与航天发射是商业航天与卫星星座部署的基础环节，核心议题包括可复用火箭技术、单位载荷发射成本、全球发射频次与商业发射市场份额。 |
 | [卫星星座与卫星通信](docs/emerging/satellite-constellations-and-satcom.md) | 卫星星座与卫星通信指以大量低轨（LEO）卫星组网提供宽带互联网接入、手机直连（Direct-to-Cell / D2D）等服务的产业。 |
 | [小型模块化反应堆与核能（Small Modular Reactors & Nuclear）](docs/emerging/small-modular-reactors.md) | 小型模块化反应堆（Small Modular Reactor，SMR）通常指单机功率较小（业界常以 IAEA 的约 300 MWe 上限为口径）、采用工厂预制、模块化运输与现场组装的裂变反应堆… |
 | [固态电池与下一代电池（Solid-State & Next-Gen Batteries）](docs/emerging/solid-state-and-next-gen-batteries.md) | 下一代电池主要指以固态电解质替代液态电解液的全固态电池（solid-state battery），以及钠离子电池、锂金属负极、硅负极等新化学体系。 |
 | [深空探索与太空经济](docs/emerging/space-exploration-and-commerce.md) | 深空探索与太空经济涵盖载人航天（月球与火星任务、空间站）、无人探测（月球、火星、小行星样本返回）、在轨服务与制造，以及由此形成的商业市场规模。 |
-| [航天科技](docs/emerging/space-tech.md) | 航天科技在 2025–2026 年进入"可复用化 + 巨型星座 + 深空回归"三重加速期。 |
 | [空间计算与 XR](docs/emerging/spatial-computing-xr.md) | 空间计算（Spatial Computing）与扩展现实（XR，含 VR/AR/MR）指将数字内容与物理空间融合、并通过眼动、手势、语音等自然交互方式操作的计算形态。 |
 | [合成生物学与生物制造（Synthetic Biology and Bio-Manufacturing）](docs/emerging/synthetic-biology-and-bio-manufacturing.md) | 合成生物学（synthetic biology）以工程化理念设计和改造生物系统，通过标准化生物元件、基因线路与底盘细胞，实现化学品、材料、能源、食品与医药的定向生产； |
 

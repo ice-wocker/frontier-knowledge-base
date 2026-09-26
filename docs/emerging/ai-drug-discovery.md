@@ -16,6 +16,7 @@ AI 制药指把机器学习、生成式模型、蛋白质结构预测与自动�
 - 大药企与 AI 平台公司的合作持续加码：**Isomorphic Labs** 与 Eli Lilly、Novartis 建立战略研究合作（[Isomorphic Labs Partnerships](https://www.isomorphiclabs.com/partnerships)）；**Chai Discovery** 先后宣布与 Eli Lilly 合作、并与 Pfizer 签署许可协议，Pfizer 将使用其含 **Chai-3** 的 AI 平台（[Chai Discovery](https://www.chaidiscovery.com/news)）。
 - 据英矽智能中期业绩公告披露，其 2026 年 1 月提名 **ISM0676**（一款新型口服小分子 GIPR 拮抗剂）为临床前候选化合物，作为当季多款 PCC 之一（[Insilico Medicine Interim Results H1 2026](https://insilico.com/news/s11n46hx31-commercialization-roadmap-validated-with)）。
 - 融资端，**Isomorphic Labs** 完成约 **21 亿美元**的 Series B（[Isomorphic Labs $2.1B Series B](https://intuitionlabs.ai/articles/isomorphic-labs-series-b-ai-drug-discovery)）；其与 Eli Lilly 的合作包含 4,500 万美元首付款与最高约 17 亿美元里程金，与 Novartis 的合作包含 3,750 万美元首付款（[Isomorphic Labs $2.1B Series B](https://intuitionlabs.ai/articles/isomorphic-labs-series-b-ai-drug-discovery)）。
+- **从结构预测到端到端分子设计**：Isomorphic Labs 于 2024 年 5 月发布 AlphaFold 3，可对生命分子的结构与相互作用建模（[Isomorphic Labs: Our Tech](https://www.isomorphiclabs.com/our-tech)）；2026 年 2 月 10 日进一步推出 **IsoDDE** 药物设计引擎，官方称其在蛋白-配体结构预测基准上精度超过 AlphaFold 3 一倍以上、抗体-抗原界面预测优于 AlphaFold 3，并具备结合亲和力预测与可配体口袋识别能力（[The Isomorphic Labs Drug Design Engine unlocks a new frontier beyond AlphaFold](https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier)）。据多方报道，CEO Demis Hassabis 预计公司首批临床试验将在 2026 年底前启动（[IntuitionLabs](https://intuitionlabs.ai/articles/isomorphic-labs-alphafold-ai-drug-discovery-trials)）。需注意：DeepMind 对 AlphaFold 3 的使用范围作出限制，禁止将公开版本用于药物发现（[AI Multiplies for Drug Discovery](https://cacm.acm.org/news/ai-multiplies-for-drug-discovery/)），这也是 Isomorphic Labs 自研 IsoDDE 的背景之一。
 
 ## 核心技术与关键概念
 
@@ -64,6 +65,9 @@ AI 制药指把机器学习、生成式模型、蛋白质结构预测与自动�
 - [RECURSION PHARMACEUTICALS, INC.](https://ir.recursion.com/node/11561/html)
 - [Isomorphic Labs Partnerships](https://www.isomorphiclabs.com/partnerships)
 - [Isomorphic Labs $2.1B Series B: AI Drug Design Analysis](https://intuitionlabs.ai/articles/isomorphic-labs-series-b-ai-drug-discovery)
+- [Isomorphic Labs: Our Tech — A unified drug design engine](https://www.isomorphiclabs.com/our-tech)
+- [The Isomorphic Labs Drug Design Engine unlocks a new frontier beyond AlphaFold](https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier)
+- [IntuitionLabs: Isomorphic Labs & AlphaFold — AI Drug Discovery in Trials](https://intuitionlabs.ai/articles/isomorphic-labs-alphafold-ai-drug-discovery-trials)
 - [Chai Discovery](https://www.chaidiscovery.com/news)
 - [AlphaFold - Google DeepMind](https://deepmind.google/science/alphafold/)
 - [AI Multiplies for Drug Discovery (CACM)](https://cacm.acm.org/news/ai-multiplies-for-drug-discovery/)

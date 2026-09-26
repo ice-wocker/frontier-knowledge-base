@@ -16,6 +16,8 @@ OLAP 与 OLTP 的设计目标根本不同：OLTP 面向高并发的单行读写�
 
 **DuckDB v2.0 走向分布式。** DuckDB 长期以快速、嵌入式、进程内列式数据库著称；v2.0 距 1.5 版累计超过 10000 次提交，是一次重大架构演进，将其运行边界扩展到分布式拓扑并稳定插件生态，同时不牺牲单二进制的简洁性，GA 计划于秋季发布（[Beyond Embedded: How DuckDB v2.0 Shifts Architecture toward Distributed Network Capabilities](https://www.infoq.com/news/2026/08/duckdb-v2-distributed/)）。v2.0 预览显示，行组裁剪被大幅扩展——min-max 索引（zone map）与 Parquet Bloom filter 现可跳过 struct、list、decimal、UUID、IN 过滤乃至函数谓词的数据（[A Preview of DuckDB v2.0](https://www.duckdb.org/2026/08/17/duckdb-20-highlights)）。生态侧，DuckDB 现随 dbt v2 内置发布，并支持直接查询 Hugging Face 数据集（[DuckDB](https://duckdb.org/)）。
 
+**ClickHouse 向 Postgres 与事务场景扩展。** 在 Open House 2026 上，ClickHouse 宣布 ClickHouse Postgres 进入公测，事务吞吐较 AWS RDS 高 5 倍以上，多阶段分布式查询将 TPC-H SF100 从 117.6 秒降至 54.7 秒（[Open House 2026 Day 1](https://clickhouse.com/blog/open-house-2026-day-1)）。StarRocks 则采用 MPP 架构、全向量化执行引擎与支持实时更新的列式存储，可在秒级加载下实现近实时分析（[StarRocks](https://docs.starrocks.io/docs/introduction/StarRocks_intro/)）。
+
 ## 核心技术与关键概念
 
 **列式存储与压缩。** 列式布局让同列数据具有相似分布，从而获得高压缩率（如 ClickHouse 在 ClickBench 中压缩率约 1:…… 见来源原文），并利于只读取所需列。列存是 OLAP 引擎区别于 OLTP 行存的核心。
@@ -63,3 +65,5 @@ OLAP 与 OLTP 的设计目标根本不同：OLTP 面向高并发的单行读写�
 - [Design and Implementation of DuckDB Internals: Vectorized Query Execution](https://blobs.duckdb.org/slides/DiDi-07.pdf)
 - [DuckDB: an Embeddable Analytical Database (SIGMOD 2019)](https://duckdb.org/pdf/SIGMOD2019-demo-duckdb.pdf)
 - [DuckDB – An in-process SQL OLAP database management system](https://duckdb.org/)
+- [Open House 2026 Day 1 (ClickHouse Postgres)](https://clickhouse.com/blog/open-house-2026-day-1)
+- [StarRocks — Database Features / Introduction](https://docs.starrocks.io/docs/introduction/StarRocks_intro/)

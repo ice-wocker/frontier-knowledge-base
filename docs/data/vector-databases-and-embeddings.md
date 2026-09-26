@@ -18,6 +18,8 @@
 
 **嵌入模型榜单更新。** 2026 年 MTEB 相关排行中，Qwen3-Embedding-8B 以 70.6 位居前列（Apache 2.0、多语言），BGE-M3 为 63.2（MIT、568M 参数），Jina Embeddings v3 为 62.8，Nomic-embed-v2 为 61.4（137M 参数、紧凑）（[MTEB 2026](https://app.ailog.fr/fr/blog/news/rag-benchmark-mteb-2026)）。另一份 2026 年 4 月榜单列出 Nomic Embed v1.5 为 62.39（768 维、8192 token、$0.05/1M tokens）与 text-embedding-3-small 为 62.26（1536 维、8191 token、$0.02/1M tokens）（[Embedding Model Leaderboard: MTEB April 2026](https://www.awesomeagents.ai/leaderboards/embedding-model-leaderboard-mteb-april-2026)）。此外，NV-Embed-v2 在 MTEB English 上达 72.31（4096 维、32K 上下文），text-embedding-3-large 为 3072 维、8K 上下文、$0.13/1M tokens（[Best Embedding Models in 2026](https://futureagi.com/blog/best-embedding-models-2025/)）。
 
+**系统性实证评测与「向量能力下沉」。** 一项针对七个系统（FAISS、Qdrant、Milvus、Weaviate、Chroma、pgvector、LanceDB）的系统性实证评测联合考察了检索质量、延迟、吞吐与资源占用（[A Comprehensive Empirical Evaluation of Vector Database Systems for ANN Search](https://arxiv.org/pdf/2608.12812)）。工程选型口径上，pgvector 因与 Postgres 原生集成、成本最低而适合关系+向量混合场景，Pinecone 主打托管与极致规模，Weaviate 内置 GraphQL 与模块化能力（[Vector Database Comparison 2026](https://bytepane.com/faq/vector-database-comparison-2026-pgvector-pinecone-weaviate-qdrant-chroma-milvus-rag/)）。更值得注意的是向量能力正被通用数据库与 AI 工具链吸收：Amazon DynamoDB 于 2026-08-05 正式支持原生向量搜索，单数毫秒延迟、99%+ 召回，可扩展至数万亿向量且无需复制到独立向量库（[Amazon DynamoDB now supports real-time vector search](https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/)）；MCP（Model Context Protocol）成为 AI Agent 与企业数据之间的默认桥梁，Weaviate v1.37 等已内置 MCP Server（[Vector Database News April 2026](https://ranksquire.com/2026/05/01/vector-database-news-april-2026/)）。
+
 ## 核心技术与关键概念
 
 **索引算法：HNSW / IVF / PQ / DiskANN。** HNSW 是图索引，查询质量高但内存开销大；IVF 通过聚类划分桶以缩小搜索范围；PQ（乘积量化）把向量切成子向量并用码本聚类编码，可达 4–32 倍压缩，代价是召回率略降；DiskANN 采用「内存存 PQ 压缩向量 + SSD 存全精度向量与图边」的混合布局，先以内存中的压缩向量导航图、再用 SSD 上的全精度向量重排候选，可在十亿级索引上实现约 100 ms 查询（[Vector Indexing: HNSW, IVF, and DiskANN](https://npblue.com/ai/rag/vector-indexing)）。
@@ -68,3 +70,7 @@
 - [Embedding Model Leaderboard: MTEB Rankings April 2026](https://www.awesomeagents.ai/leaderboards/embedding-model-leaderboard-mteb-april-2026)
 - [Best Embedding Models in 2026: NV-Embed-v2, BGE-M3, E5-mistral, Voyage 3 Compared](https://futureagi.com/blog/best-embedding-models-2025/)
 - [Best Open-Weight Embedding Models 2026](https://presenc.ai/research/best-open-weight-embedding-models-2026)
+- [A Comprehensive Empirical Evaluation of Vector Database Systems for ANN Search](https://arxiv.org/pdf/2608.12812)
+- [Vector Database Comparison 2026: pgvector, Pinecone, Weaviate, Qdrant, Chroma, Milvus for RAG](https://bytepane.com/faq/vector-database-comparison-2026-pgvector-pinecone-weaviate-qdrant-chroma-milvus-rag/)
+- [Amazon DynamoDB now supports real-time vector search at any scale](https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/)
+- [Vector Database News April 2026: MCP Arrives](https://ranksquire.com/2026/05/01/vector-database-news-april-2026/)

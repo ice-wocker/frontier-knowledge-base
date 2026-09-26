@@ -14,6 +14,10 @@
 - **碱基编辑进入临床**：Beam Therapeutics 的 **risto-cel（原 BEAM-101）** 用于 SCD，其 BEACON I/II 期数据于 2026 年 4 月 1 日发表于《新英格兰医学杂志》；该编辑模拟 HBG1/2 启动子的自然 A→G 变异，阻断 BCL11A 转录抑制因子结合，从而提高抗病性胎儿血红蛋白（HbF）（[Beam Announces Publication of BEACON Phase 1/2 Data](https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-publication-beacon-phase-12-data)、[Beam EHA Poster](https://beamtx.com/wp-content/uploads/2025/06/BEAM-101-EHA_Final_22May2025.pdf)）。
 - **体内 CAR-T 兴起**：2026 年 1 月 29 日，石药集团 **SYS6055** 的临床试验申请获中国 CDE 批准，据公司称是「中国首个获准临床试验的体内 CAR-T 候选」（[Clinical Progress of In Vivo CAR-T Therapies](https://www.sinobiological.com/resource/in-vivo-car-t/clinical-progress)）。Kelonia Therapeutics 的 **KLN-1010** 获得 FDA Fast Track，其数据显示体内生成 CAR-T 或无需淋巴细胞清除（lymphodepletion），2026 年 4 月 Eli Lilly 同意以最高 70 亿美元收购 Kelonia（[Kelonia Therapeutics](https://www.thepharmaletter.com/ones-to-watch/kelonia-therapeutics)、[In Vivo CAR-T Therapy Explained](https://lifesciencedaily.news/in-vivo-car-t-therapy-explained/)）。CARsgen 基于 CARvivo™ 平台的 **KJ-C2529**（CD19/CD20）于 2026 年启动 IIT，其其他在研体内 CAR-T 还包括靶向 BCMA/GPRC5D 的 KJ-C2632（用于复发/难治多发性骨髓瘤）与 KJ-C2633（[CARsgen 2026 Interim Results](https://cielcharlotte.com/carsgen-therapeutics-announces-2026-interim-results/)）。
 - **编辑工具临床数据**：CRISPR Therapeutics 的 **CTX310**（靶向 ANGPTL3）在 ESC 2026 公布 Phase 1a 数据，显示深度且持久的 ANGPTL3 编辑以及甘油三酯与 LDL 降低（[Gene Editing Weekly — September 19–25, 2026](https://neodrop.ai/post/qwQIOWhps6U)）；公司计划在 2026 年下半年公布 CTX310 的 Phase Ib 数据，以及 zugo-cel 在自身免疫（NCT06925542）与肿瘤（NCT05643742）的 Phase I 数据（[CRISPR and Sharper: Gene Editing Technologies](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair-crispr-and-sharper_gene-editing-technologies.pdf)）。lonvo-z 已取得五项重要监管认定，包括孤儿药资格与 RMAT 认定（[Intellia Therapeutics](https://ir.intelliatx.com/node/12626/html)）。
+- **更早的体内编辑先例**：Intellia 的 **NTLA-2001** 靶向转甲状腺素蛋白（TTR），用于 ATTR 淀粉样变性；其一期结果发表于 NEJM，最高剂量组（0.9 mg/kg）在 12 个月时血清 TTR 降低 87% 且无需追加给药（[CRISPR Clinical Trials 2026](https://clinicalmetric.com/insights/crispr-gene-editing-clinical-trials-2026)）。
+- **患者个体化编辑**：一项针对新生儿重症氨甲酰磷酸合成酶 1 缺乏症（CPS1）的个体化碱基编辑疗法，通过脂质纳米颗粒（LNP）递送，患儿在约 7 与 8 月龄接受两次输注，属针对单一患者私人突变的定制疗法（[Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease, Penn](https://www.med.upenn.edu/cstr/assets/user-content/Fall%202025/Patient-Specific%20In%20Vivo%20Gene%20Editing%20to%20Treat%20a%20Rare%20Genetic%20Disease.pdf)）。
+- **个性化 mRNA 癌症疫苗首获三期成功**：Merck 与 Moderna 的个性化新抗原疗法（INT）intismeran autogene（V940 / mRNA-4157）联合 KEYTRUDA 的三期 INTerpath-001 试验，在完全切除的 IIB–IV 期黑色素瘤辅助治疗中达到无复发生存（RFS）与无远处转移生存（DMFS）终点，两家公司计划与监管机构沟通提交（[Merck 官方新闻](https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/)）；这是首个在晚期临床中成功的 mRNA 癌症疫苗（[C&EN: In a first, an mRNA cancer vaccine succeeds in late-stage clinical trial](https://cen.acs.org/pharmaceuticals/vaccines/mrna-cancer-vaccine-succeeds-clinical-trial/104/web/2026/08)）。
+- **中国建立细胞与基因治疗全链条监管**：国务院于 2025 年 10 月 10 日发布《生物医学新技术临床研究和临床转化应用管理条例》（业内称「818 号令」），自 2026 年 5 月 1 日起施行，为我国首部专门针对生物医学新技术临床研究与转化应用的行政法规（[汉坤律师事务所解读](https://www.hankunlaw.com/upload/portal/20251017/a17e1b0169a1f2a0e6b1470a247aebfd.pdf)、[人民网：畅通生物医学新技术转化应用路径](http://health.people.com.cn/n1/2026/0422/c14739-40706244.html)）；上海将体内基因编辑治疗列入 2026 年度「细胞与基因治疗」关键技术研发计划申报方向（[上海市科委通知](https://stcsm.sh.gov.cn/zwgk/kyjhxm/xmsb/20260428/15590796b7104c5fafa8ccba4d68c4ae.html)）。
 
 ## 核心技术与关键概念
 
@@ -51,6 +55,8 @@ CRISPR Therapeutics 管线还包括：**CTX310**（靶向 ANGPTL3，Ib 期数据
 - **体外 vs 体内**：传统自体 CAR-T 需采血、体外改造、清淋预处理，流程复杂、成本高昂且集中在专科中心；体内编辑/体内 CAR-T 有望简化流程、降低毒性负担，但长期安全性与编辑特异性仍待随访验证（[In Vivo CAR-T Therapy Explained](https://lifesciencedaily.news/in-vivo-car-t-therapy-explained/)）。
 - **价格与可及性争议**：一次性疗法定价达数百万美元级别，医保与商业保险的支付模型（分期付款、按疗效付费、CGT Access Model）成为能否规模化的关键。
 - **脱靶与安全性**：慢病毒载体类产品存在继发血液系统恶性肿瘤的警示；编辑工具的脱靶、嵌合与染色体重排风险是监管与临床关注重点（[Sickle Cell Disease Treatment Access Landscape](https://pharmadossier.com/blog/sickle-cell-disease-treatment-access-landscape)）。
+- **安全警示案例**：2025 年 11 月有患者在 CRISPR 试验中死亡，提醒基因编辑的递送与脱靶风险仍是核心瓶颈（[Deep DNA: CRISPR 2026 — What Gene Editing Can Actually Treat](https://deepdna.ai/blog/crispr-complete-guide/)）。
+- **个体化疗法的监管难题**：针对单一患者私人突变的定制疗法（如 CPS1 碱基编辑）在监管路径与可及性上仍存争议（[Penn](https://www.med.upenn.edu/cstr/assets/user-content/Fall%202025/Patient-Specific%20In%20Vivo%20Gene%20Editing%20to%20Treat%20a%20Rare%20Genetic%20Disease.pdf)）。
 
 ## 参考来源
 
@@ -79,3 +85,10 @@ CRISPR Therapeutics 管线还包括：**CTX310**（靶向 ANGPTL3，Ib 期数据
 - [CRISPR Technologies for In Vivo and Ex Vivo Gene Editing](https://www.ncbi.nlm.nih.gov/books/NBK609557/)
 - [CMS Cell and Gene Therapy (CGT) Access Model Guidance](https://www.health.ny.gov/health_care/managed_care/plans/2026/cgt_access_model_guidance.htm)
 - [当百万CAR-T"天价药"叩响医保大门（湖南省人民政府）](http://hunan.gov.cn/topic/kjbh/hmszfz/gzjxs8/szxx08/202607/t20260729_34035734.html)
+- [Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease (Penn CSTR)](https://www.med.upenn.edu/cstr/assets/user-content/Fall%202025/Patient-Specific%20In%20Vivo%20Gene%20Editing%20to%20Treat%20a%20Rare%20Genetic%20Disease.pdf)
+- [Merck and Moderna Announce Phase 3 INTerpath-001 Trial Results](https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/)
+- [C&EN — In a first, an mRNA cancer vaccine succeeds in late-stage clinical trial](https://cen.acs.org/pharmaceuticals/vaccines/mrna-cancer-vaccine-succeeds-clinical-trial/104/web/2026/08)
+- [Deep DNA — CRISPR 2026: What Gene Editing Can Actually Treat](https://deepdna.ai/blog/crispr-complete-guide/)
+- [汉坤律师事务所 — 中国生物医学新技术监管解读](https://www.hankunlaw.com/upload/portal/20251017/a17e1b0169a1f2a0e6b1470a247aebfd.pdf)
+- [人民网 — 畅通生物医学新技术转化应用路径](http://health.people.com.cn/n1/2026/0422/c14739-40706244.html)
+- [上海市科委 — 2026 年度「细胞与基因治疗」关键技术研发计划申报指南](https://stcsm.sh.gov.cn/zwgk/kyjhxm/xmsb/20260428/15590796b7104c5fafa8ccba4d68c4ae.html)

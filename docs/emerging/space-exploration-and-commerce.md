@@ -10,7 +10,7 @@
 
 **Artemis II 完成载人绕月飞行。** NASA 的 Artemis II 于 2026 年 4 月 1 日发射，任务时长 9 天 1 小时 32 分钟，4 月 10 日在加利福尼亚海岸附近太平洋溅落（[NASA — Artemis II](https://www.nasa.gov/mission/artemis-ii/)）。乘组为 NASA 宇航员 Reid Wiseman、Victor Glover、Christina Koch 与 CSA 宇航员 Jeremy Hansen，飞行中距地球达 252,756 英里，创下人类太空飞行最远距离纪录（[NASA — Moon to Mars：Artemis Program](https://www.nasa.gov/humans-in-space/artemis/)）。这是自 50 年前阿波罗计划以来 NASA 首次载人绕月飞行。
 
-**中国月球与火星探测推进。** 中国将载人登月与无人探月从任务、资源、队伍三方面深度整合，统称「月球探测工程」；嫦娥七号探测器已运抵文昌发射场，计划 2026 年下半年择机发射（[新华网：神舟二十三号｜中国空间站多方面支撑「月球探测工程」](https://www.news.cn/tech/20260523/b63d963834874c80ba59f0baf55878b2/c.html)）。天问二号于 2025 年 5 月发射，目标近地小行星 469219 Kamoʻoalewa，经约 400 天巡航后于 2026 年 7 月 6 日抵近至 20 公里处并开始勘测，计划 2027 年 4 月启程返回、释放样本舱（[The Space Wiki — CNSA](https://thespacewiki.com/wiki/cnsa)）。天问三号火星采样返回任务计划 2028 年发射，有望成为首个从火星带回样本的人类探测器（[CGTN — China's space program enters its eighth decade](https://news.cgtn.com/news/2026-04-25/China-s-space-program-enters-its-eighth-decade-with-steady-progress-1MBYlL79UYg/p.html)）。中国还推进火星采样返回、小行星飞越与更多发射场建设（[NASASpaceFlight — China roundup 2026-09](https://www.nasaspaceflight.com/2026/09/china-roundup-202609/)）。
+**中国月球与火星探测推进。** 中国将载人登月与无人探月从任务、资源、队伍三方面深度整合，统称「月球探测工程」；嫦娥七号探测器已运抵文昌发射场，计划 2026 年下半年择机发射（[新华网：神舟二十三号｜中国空间站多方面支撑「月球探测工程」](https://www.news.cn/tech/20260523/b63d963834874c80ba59f0baf55878b2/c.html)）。不过，中国国家航天局于 2026 年 8 月 23 日发布消息称，经综合研判嫦娥七号任务不满足发射条件，不能在今年预定窗口实施（[国家航天局：要闻动态](https://www.cnsa.gov.cn/n6758823/n6758838/)、[光明网：中国航天2026年「大事记」](https://m.gmw.cn/2026-01/01/content_1304287161.htm)）。载人航天方面，2026 年 2 月 11 日长征十号完成低空演示验证与梦舟飞船最大动压逃逸飞行试验；2026 年中国计划实施 2 次载人飞行任务与 1 次货运飞船补给任务（[新华网：写在第十一个「中国航天日」之际](https://www.news.cn/tech/20260423/a5e8c0974b214dd69ebad6a5b9b15ade/c.html)）。天问二号于 2025 年 5 月发射，目标近地小行星 469219 Kamoʻoalewa，经约 400 天巡航后于 2026 年 7 月 6 日抵近至 20 公里处并开始勘测，计划 2027 年 4 月启程返回、释放样本舱（[The Space Wiki — CNSA](https://thespacewiki.com/wiki/cnsa)）。天问三号火星采样返回任务计划于 2028 年前后发射、2031 年前后携带火星样品返回，有望成为首个从火星带回样本的人类探测器（[CGTN — China's space program enters its eighth decade](https://news.cgtn.com/news/2026-04-25/China-s-space-program-enters-its-eighth-decade-with-steady-progress-1MBYlL79UYg/p.html)、[国家航天局：天问三号任务合作项目遴选结果](https://www.cnsa.gov.cn/n6758823/n6758839/c10742471/content.html)）。中国还推进火星采样返回、小行星飞越与更多发射场建设（[NASASpaceFlight — China roundup 2026-09](https://www.nasaspaceflight.com/2026/09/china-roundup-202609/)）。
 
 **近地轨道空间站进入过渡期。** 现役国际空间站（ISS）计划于 2030 年退役，部分力量推动延至 2032 年；围绕接替能力，多座商业空间站正并行开发（[SpaceNexus: When Does the ISS Retire](https://spacenexus.us/guide/when-does-the-iss-retire)）。中国空间站方面，官方表述其已进入常态化运营并「多方面支撑月球探测工程」，空间站任务也在为载人登月培养人才与验证技术（[新华网](https://www.news.cn/tech/20260523/b63d963834874c80ba59f0baf55878b2/c.html)）。
 
@@ -43,6 +43,7 @@
 | Artemis II 任务时长 | 9 天 1 小时 32 分（2026-04-01 至 04-10） | [NASA](https://www.nasa.gov/mission/artemis-ii/) |
 | Artemis II 最远距离 | 252,756 英里 | [NASA](https://www.nasa.gov/humans-in-space/artemis/) |
 | 2024 全球太空经济规模 | 约 6,300 亿美元 | [SpaceNexus: The Space Economy in 2030](https://spacenexus.us/blog/space-economy-2030-trillion-dollar-industry) |
+| 全球太空经济规模（另一口径） | 2025 年 4,391 亿美元 → 2026 年 4,624 亿美元 → 2035 年 8,518 亿美元（约 7% CAGR） | [GM Insights: Space Economy Market Size 2026–2035](https://www.gminsights.com/industry-analysis/space-economy-market) |
 | 2030 太空经济预测 | 多方预测突破 1 万亿美元（Morgan Stanley 最乐观情形 2035 年 1.8 万亿美元） | [SpaceNexus](https://spacenexus.us/blog/space-economy-2030-trillion-dollar-industry) |
 | 在轨服务市场规模 | 2025 年 18 亿美元 → 2026 年约 24 亿美元 → 2036 年 98 亿美元 | [Meticulous Research](https://www.meticulousresearch.com/product/in-orbit-servicing-market-6598/toc) |
 | 在轨制造/服务/运输市场 | 2026 年 91.4 亿美元 → 2035 年 448.1 亿美元 | [Morgan Reed Insights](https://www.morganreedinsights.com/in-space-manufacturing-servicing-and-transportation-market/) |
@@ -71,3 +72,8 @@
 14. [Morgan Reed Insights — In-Space Manufacturing, Servicing and Transportation Market](https://www.morganreedinsights.com/in-space-manufacturing-servicing-and-transportation-market/)
 15. [产业世界 — 全球及中国空间站商业化市场前景趋势分析报告](https://www.inwwin.com.cn/103/view-1215175-1.html)
 16. [ESA — Report on the Space Economy 2026](https://space-economy.esa.int/documents/ESA%20Report%20on%20the%20Space%20Economy%202026%20-%20public_6a54dcb2dc6f2.pdf)
+17. [国家航天局 — 要闻动态（嫦娥七号任务不满足发射条件）](https://www.cnsa.gov.cn/n6758823/n6758838/)
+18. [光明网 — 中国航天2026年「大事记」值得期待](https://m.gmw.cn/2026-01/01/content_1304287161.htm)
+19. [新华网 — 写在第十一个「中国航天日」之际](https://www.news.cn/tech/20260423/a5e8c0974b214dd69ebad6a5b9b15ade/c.html)
+20. [国家航天局 — 发布天问三号任务合作项目遴选结果](https://www.cnsa.gov.cn/n6758823/n6758839/c10742471/content.html)
+21. [GM Insights — Space Economy Market Size & Share 2026–2035](https://www.gminsights.com/industry-analysis/space-economy-market)

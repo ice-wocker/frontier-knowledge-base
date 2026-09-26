@@ -14,7 +14,7 @@
 
 **Starship 试飞加速。** 2026 年 5 月，Starship 完成第 12 次试飞，也是升级版 V3 的首飞，实现载荷部署、再入与受控海上溅落，但出现一台发动机上升段损失与助推器再入点火失败等异常（[CGTN: SpaceX's Starship flight hits most targets in pre-IPO test](https://news.cgtn.com/news/2026-05-24/SpaceX-s-Starship-flight-hits-most-targets-in-pre-IPO-test-1NoWQ0enlnO/p.html)）。SpaceX 宣布计划于 2026 年 9 月 22 日进行第 14 次试飞，首次尝试使 Starship 进入地球轨道，并计划送入 26 颗新一代 Starlink V3 卫星（[新华网：美「星舰」计划进行首次地球轨道试飞](http://www3.xinhuanet.com/20260916/44fa17aa5c70450c93a59d59e431b069/c.html)）。
 
-**Starship 后续试飞与复用目标。** 在 V3 首飞（第 12 次试飞）之后，Starship 于 2026 年 7 月完成第 13 次试飞，部署了 Starlink V3 卫星且飞船保持完好；据该报道，SpaceX 在分析飞行数据后表示第 14 次试飞将尝试首次用发射塔捕获飞船（[SpaceX France: Starship 13](https://www.spacexfrance.com/starship-13/)）。新华社报道称第 14 次试飞计划于 2026 年 9 月 22 日进行，首次尝试使 Starship 进入地球轨道并部署 26 颗新一代 Starlink V3 卫星（[新华网](http://www3.xinhuanet.com/20260916/44fa17aa5c70450c93a59d59e431b069/c.html)）。不同来源对试飞编号与目标的描述存在差异，需以 SpaceX 官方口径为准。
+**Starship 后续试飞与复用目标。** 在 V3 首飞（第 12 次试飞）之后，Starship 于 2026 年 7 月完成第 13 次试飞，部署了 Starlink V3 卫星且飞船保持完好；据该报道，SpaceX 在分析飞行数据后表示第 14 次试飞将尝试首次用发射塔捕获飞船（[SpaceX France: Starship 13](https://www.spacexfrance.com/starship-13/)）。新华社报道称第 14 次试飞计划于 2026 年 9 月 22 日进行，首次尝试使 Starship 进入地球轨道并部署 26 颗新一代 Starlink V3 卫星（[新华网](http://www3.xinhuanet.com/20260916/44fa17aa5c70450c93a59d59e431b069/c.html)）。不同来源对试飞编号与目标的描述存在差异，需以 SpaceX 官方口径为准。补充细节：第 12 次试飞为全新 V3（Block 3）版本首飞，火箭总高约 124 米，动力与结构显著增强（[Airpro News: SpaceX Launches Starship Flight 12 with Upgraded Version 3 Rocket](https://airpronews.com/2026/05/22/spacex-launches-starship-flight-12-with-upgraded-version-3-rocket/?amp=1)、[光明网："星舰V3"首飞](https://m.gmw.cn/2026-05/22/content_38781789.htm)）；第 13 次试飞（2026 年 7 月 24 日）部署首批下一代 Starlink 卫星，完成太空发动机二次点火，并实现 SpaceX 迄今为止最"温柔"的海上溅落（[Astronomy: SpaceX launches Starship test flight 'lucky number 13'](https://www.astronomy.com/space-exploration/spacex-launches-starship-test-flight-lucky-number-13/)）。
 
 **中国可复用火箭突破。** 2026 年 8 月 19 日，朱雀三号遥二运载火箭在东风商业航天创新试验区发射，一子级按预定程序成功完成陆地回收，这是中国首次成功实施重复使用火箭一子级着陆腿方式回收（[人民日报海外版：中国首次实现火箭陆地回收](http://paper.people.com.cn/rmrbhwb/pad/content/202608/20/content_30175949.html)）。回收点位于甘肃民勤县、距发射场约 390 公里；两次飞行均实现入轨（[OrbitalIntel: Zhuque-3 Explained](https://www.orbitalintel.org/launch/zhuque-3-explained/)）。蓝箭航天表示目标是让火箭飞行「像航空一样例行」（[CCTVPlus: China's LandSpace aims to make rocket flights as routine as aviation](https://www.cctvplus.com/news/20260819/8495104.shtml)）。
 
@@ -26,6 +26,8 @@
 - **单位发射成本**：SpaceNexus 统计显示，Falcon 9 专用发射标价约 7,400 万美元，按满载约每公斤 3,246 美元；Transporter 拼车约每公斤 7,000 美元（50 公斤起、35 万美元起）（[SpaceNexus: Space Launch Cost Comparison 2026](https://spacenexus.us/guide/space-launch-cost-comparison)）。
 - **拼车与频次**：SpaceX 小卫星拼车计划最初定价 200 公斤 100 万美元（即每公斤 5,000 美元），现市场追踪价接近每公斤 7,000 美元（[Business Model Analyst: SpaceX Didn't Raise the Price of a Rocket](https://businessmodelanalyst.com/spacex-falcon-9-shortage-starlink-priority/)）。
 - **运力与质量**：2025 年美国送入轨道质量超 2,600 吨、中国 325 吨，反映运力与星座部署需求的量级差异（[ITU](https://www.itu.int/dms_pub/itu-r/md/23/rag/inf/R23-RAG-INF-0009!!PDF-E.pdf)）。
+- **复用里程碑与单位成本**：SpaceX 的 Falcon 9 助推器 B1067 到 2026 年 8 月已完成 37 次复用（[Frontier Milestones: Reusable Rockets](https://frontiermilestones.org/space-launch/)）；另一口径显示 Falcon 9 复用单位成本约 2,600 美元/公斤，New Glenn 约 5,000 美元/公斤、Atlas V 约 6,670 美元/公斤（[Frontier Milestones](https://frontiermilestones.org/space-launch/)、[Live in the Future](https://liveinthefuture.org/stories/us-eastern-range-five-rockets-sixty-year-record)）。
+- **中国可复用火箭的成本目标**：中国商业火箭朱雀三号计划在复用 8–10 次后，把报价从约 2,800 美元/公斤降至 2030 年的 1,800–2,200 美元/公斤，直逼 Falcon 9（[Habtoor Research: The Economics of Reusable Launch Vehicles](https://www.habtoorresearch.com/programmes/economics-reusable-launch-vehicles/)、[Frontier Milestones](https://frontiermilestones.org/space-launch/)）。
 - **发射场与海上发射**：中国商业航天发射基础设施加速建设，海南商业航天发射场已承担千帆星座组网发射任务（[CGTN: China launches new satellite group for Qianfan constellation](https://news.cgtn.com/news/2026-07-06/China-launches-new-satellite-group-for-Qianfan-constellation-1Oyel8dkR44/p.html)）；中国亦使用海上平台在近海发射卫星，2026 年 9 月由太原卫星发射中心在上海附近海域执行了一箭 9 星任务（[Global Times](https://www.globaltimes.cn/page/202609/1370940.shtml)）。东风商业航天创新试验区则是朱雀三号回收试验的发射场（[人民日报海外版](http://paper.people.com.cn/rmrbhwb/pad/content/202608/20/content_30175949.html)）。
 
 **商业发射市场的竞争结构。** 商用发射市场的第二梯队正在扩张：Rocket Lab 2025 年全年营收 601.8 百万美元，其一级可复用能力仍在验证阶段，而 SpaceX 单个助推器最多已飞行 34 次；SpaceX 除发射外还经营 Starlink 连接与 AI 算力业务，业务结构与纯发射商差异明显（[OrbitalIntel: Rocket Lab vs SpaceX](https://www.orbitalintel.org/launch/rocket-lab-vs-spacex/)）。另一方面，Falcon 9 运力紧张使小卫星拼车客户面临「价格上涨、优先级下降」的局面，反映头部发射商将产能优先分配给自家星座的行业现象（[Business Model Analyst](https://businessmodelanalyst.com/spacex-falcon-9-shortage-starlink-priority/)）。
@@ -47,6 +49,9 @@
 | 2025 美国入轨卫星/质量 | >3,700 颗 / >2,600 吨 | [ITU](https://www.itu.int/dms_pub/itu-r/md/23/rag/inf/R23-RAG-INF-0009!!PDF-E.pdf) |
 | 2025 中国入轨卫星/质量 | 371 颗 / 325 吨 | [ITU](https://www.itu.int/dms_pub/itu-r/md/23/rag/inf/R23-RAG-INF-0009!!PDF-E.pdf) |
 | Falcon 9 单位成本 | 约 3,246 美元/公斤 | [SpaceNexus](https://spacenexus.us/guide/space-launch-cost-comparison) |
+| Falcon 9 复用单位成本（另一口径） | 约 2,600 美元/公斤 | [Frontier Milestones](https://frontiermilestones.org/space-launch/) |
+| New Glenn / Atlas V 单位成本 | 约 5,000 / 6,670 美元/公斤 | [Live in the Future](https://liveinthefuture.org/stories/us-eastern-range-five-rockets-sixty-year-record) |
+| Falcon 9 单个助推器最高复用次数 | B1067 达 37 次（2026 年 8 月） | [Frontier Milestones](https://frontiermilestones.org/space-launch/) |
 | 2026 年发射数（截至约 9 月） | SpaceX 109、中国 62、Rocket Lab 15 | [Behind The Black](https://behindtheblack.com/tag/spacex/) |
 | SpaceX FY2025 营收 | 18,674 百万美元 | [OrbitalIntel](https://www.orbitalintel.org/launch/rocket-lab-vs-spacex/) |
 
@@ -75,3 +80,6 @@
 17. [CGTN — China launches new satellite group for Qianfan constellation](https://news.cgtn.com/news/2026-07-06/China-launches-new-satellite-group-for-Qianfan-constellation-1Oyel8dkR44/p.html)
 18. [Xinhua — Chinese Gravity-1 rocket launches new satellites from sea](http://www.chinaview.cn/20260916/2a49fb5cf85f4a86be4786d2a33c9957/c.html)
 19. [Global Times — Kinetica-1 successfully launches 9 satellites](https://www.globaltimes.cn/page/202609/1370940.shtml)
+20. [Frontier Milestones — Reusable Rockets](https://frontiermilestones.org/space-launch/)
+21. [Live in the Future — Five Different Rockets Launched From the Same Spaceport in April](https://liveinthefuture.org/stories/us-eastern-range-five-rockets-sixty-year-record)
+22. [Habtoor Research — The Economics of Reusable Launch Vehicles and the Competition over Low Earth Orbit](https://www.habtoorresearch.com/programmes/economics-reusable-launch-vehicles/)

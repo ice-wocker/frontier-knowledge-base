@@ -42,6 +42,10 @@ API 安全方面，2023 版仍为当前最新版本，OWASP 尚未发布更新�
 
 OWASP 对 API1:2023 的解释是，攻击者可通过操纵请求中的对象 ID（顺序整数、UUID 或通用字符串）利用对象级授权缺陷，这类问题在 API 应用中极为常见，因为服务端通常不完整跟踪客户端状态，而依赖客户端传入的对象 ID 决定可访问的对象（[API1:2023 Broken Object Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/)）。BOLA 已连续两个版本位居首位（[OWASP API Security Top 10 Explained With Code](https://cyberphinix.de/en/blog/owasp-api-security-top-10/)）。
 
+### API 攻击规模与 AI 相关高危案例
+
+2026 年的 API 威胁数据显示攻击强度显著上升：Akamai《2026 互联网现状》报告称，受访组织平均每天遭遇 258 次 API 攻击（2025 年数据），较 2024 年的 121 次增长 113%（[API Security Statistics 2026](https://axis-intelligence.com/api-security-statistics/)、[Apps, APIs, and DDoS 2026 — Akamai](https://www.akamai.com/site/en/documents/state-of-the-internet/2026/app-api-ddos-security-report-2026.pdf)）。2026 年已出现与 AI 组件相关的高危 API 案例：LiteLLM 的预认证远程代码执行（CVE-2026-42208）在公开披露后 36 小时内即被大规模利用（[API Security Guide 2026](https://chs.us/guides/api-security/)）。
+
 ### AI 生成代码带来的新挑战
 
 多方报告给出 AI 生成代码存在安全缺陷的比例：Veracode 的 GenAI Code Security Report 称 45% 的 AI 生成代码含安全漏洞（[The #1 AppSec Blind Spot: Why AI Code Defeats Traditional SAST](https://www.softwareseni.com/the-1-appsec-blind-spot-why-ai-code-defeats-traditional-sast/)）；另有 2026 年工具评测引用「40% 的 AI 生成代码含安全漏洞」并强调 AppSec 平台若不覆盖 AI 资产、MCP 服务器与 AI 编码助手将留下关键缺口（[The 7 Best Application Security Tools for 2026](https://xygeni.io/blog/top-application-security-tools/)）。DX Research 在 2026 年 Q1 对 500+ 组织的分析称，27% 的生产代码已由 AI 生成。实践观察则指出，截至 2026 年中期，尚无自动化工具能可靠捕获授权逻辑缺陷、缺失限流或仅客户端的安全控制（[Scanning Vibe-Coded Apps: Why Traditional SAST/DAST Falls Short](https://simonroses.com/2026/05/scanning-vibe-coded-apps-why-traditional-sast-dast-falls-short-part-6/)）。

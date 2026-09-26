@@ -14,6 +14,10 @@
 
 **可下载的全球分布式数据库。** Google 于 2026 年 4 月 23 日发布 Spanner Omni 预览，把 Spanner 从纯云服务扩展到客户自有数据中心、其他云甚至笔记本上运行；其关键点是使用**基于软件的 TrueTime** 在任何环境提供全局事务一致性，并支持关系、键值、图、向量等多模型与跨模型 ACID 事务（[Announcing Spanner Omni](https://cloud.google.com/blog/products/databases/introducing-spanner-omni/?hl=en)、[Spanner Omni overview](https://docs.cloud.google.com/spanner-omni/overview)）。
 
+**分布式 SQL 阵营的版本动态。** CockroachDB v26.2（2026-04-27）通过 `distributed_merge.mode` 为 `IMPORT` 操作提供分布式合并，分两阶段执行——先写本地 SST，再由协调者合并摄取（[What's New in v26.2 — CockroachDB](https://www.cockroachlabs.com/docs/releases/v26.2)）。YugabyteDB v2026.1 STS 系列引入面向多租户的资源治理（Resource Governance for Multitenancy），基于 Linux cgroups 在资源争用时公平分配 CPU，并可为数据库配置 CPU 上限（[What's new in the YugabyteDB v2026.1 STS release series](https://docs.yugabyte.com/stable/releases/ybdb-releases/v2026.1/)）。TiDB 为 MySQL 兼容的分布式 SQL，基于 TiKV 存储、通过 TiFlash 提供 HTAP 分析路径且无需手工分片；三者的取舍集中在兼容生态（Postgres vs MySQL）、多区域一致性与延迟、以及乐观/悲观并发控制策略上（[TiDB vs CockroachDB (2026) Comparison Guide](https://www.pingcap.com/compare/cockroachdb-vs-tidb/)、[TiDB vs YugabyteDB (2026)](https://www.pingcap.com/compare/yugabytedb-vs-tidb/)）。
+
+**云原生数据库的形态演进。** Amazon Aurora DSQL 为无服务器分布式 SQL，宣称最高 99.999% 可用性；Aurora Serverless 亦带来最高 30% 的性能提升并增强扩缩能力（[Amazon Aurora DSQL features](https://aws.amazon.com/rds/aurora/dsql/faqs/)、[Amazon Aurora 资源](https://aws.amazon.com/cn/rds/aurora/resources/)）。Neon 于 2025-05-14 宣布被 Databricks 收购，其无服务器 Postgres 架构成为 Lakebase Postgres 的基础，可运行于 Neon 与 Databricks 两处（Neon 以 copy-on-write 提供数据库分支能力）；Lakebase 被定位为面向 AI 应用与 Agent 的「运营型数据库」新类别，把运营数据引入湖仓并支持持续自动扩缩（[Databricks Agrees to Acquire Neon](https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-neon-help-developers-deliver-ai-systems)、[Neon and Lakebase](https://neon.com/docs/introduction/neon-and-lakebase)、[Databricks Launches Lakebase](https://www.databricks.com/company/newsroom/press-releases/databricks-launches-lakebase-new-class-operational-database-ai-apps)）。PlanetScale 主打高并发 MySQL 兼容，其公开基准声称相对 Neon Lakebase 最高快 1.4 倍、相对 Supabase 最高快 3.4 倍（[PlanetScale Benchmarks](https://planetscale.com/benchmarks)）。
+
 ## 核心技术与关键概念
 
 **一致性模型与隔离级别。** 从线性一致性（linearizability）到可串行化（serializability），再到 Spanner 提供的外部一致性（external consistency，即严格可串行化）：若事务 T1 在真实时间上先于 T2 提交，则 T1 的提交时间戳必须小于 T2 的开始时间；在未指定隔离级别时，Spanner 默认提供这一最强保证（[True Time and external consistency](https://docs.cloud.google.com/spanner/docs/true-time-external-consistency)）。Spanner 的实现基础是 TrueTime——一个返回带边界时间区间 `[earliest, latest]` 的 API，真实时间保证落在区间内（[Distributed Databases](https://people.cs.rutgers.edu/~pxk/classes/417/notes/distributed-databases.html)），从而让不同机器能对事务顺序达成一致（[Life of Spanner Reads & Writes](https://docs.cloud.google.com/spanner/docs/whitepapers/life-of-reads-and-writes)）。
@@ -65,3 +69,12 @@
 19. [TiDB 8.5.0 Release Notes](https://docs.pingcap.com/tidb/dev/release-8.5.0/)
 20. [Spanner release notes](https://docs.cloud.google.com/spanner/docs/release-notes?authuser=8)
 21. [Eventual Consistency or Probabilistic Reconciliation? PACELC](https://uplatz.com/blog/eventual-consistency-or-probabilistic-reconciliation-deconstructing-the-core-trade-offs-of-decentralized-ledgers/)
+22. [What's New in v26.2 — CockroachDB](https://www.cockroachlabs.com/docs/releases/v26.2)
+23. [TiDB vs CockroachDB (2026) Comparison Guide for Platform Teams](https://www.pingcap.com/compare/cockroachdb-vs-tidb/)
+24. [TiDB vs YugabyteDB (2026) Comparison Guide for Platform Teams](https://www.pingcap.com/compare/yugabytedb-vs-tidb/)
+25. [Serverless distributed SQL database with active-active high availability – Amazon Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/faqs/)
+26. [Amazon Aurora 资源](https://aws.amazon.com/cn/rds/aurora/resources/)
+27. [Databricks Agrees to Acquire Neon](https://www.databricks.com/company/newsroom/press-releases/databricks-agrees-acquire-neon-help-developers-deliver-ai-systems)
+28. [Neon and Lakebase](https://neon.com/docs/introduction/neon-and-lakebase)
+29. [Databricks Launches Lakebase, a New Class of Operational Database for AI Apps](https://www.databricks.com/company/newsroom/press-releases/databricks-launches-lakebase-new-class-operational-database-ai-apps)
+30. [PlanetScale Benchmarks](https://planetscale.com/benchmarks)

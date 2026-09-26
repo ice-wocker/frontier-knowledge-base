@@ -12,11 +12,13 @@
 - **医保快速打通**：2026 年 3 月 15 日，国家医保局为该产品完成医保编码赋码，打通创新产品从获批上市到临床应用的环节（[医保“码”力全开！全球首个脑机接口创新产品获得医保编码（国家医保局）](https://www.nhsa.gov.cn/art/2026/3/22/art_14_19989.html)）。侵入式脑机接口置入费集中在 6000 至 6600 元，非侵入式适配费约 960 元（[新价格项目落地，让医疗真创新 更好惠及患者（国家医保局）](https://www.nhsa.gov.cn/art/2026/5/8/art_14_20425.html)）。
 - **监管框架清晰化**：2026 年 6 月 30 日，国家药监局发布《脑机接口医疗器械产品分类界定指导原则》和《脑机接口医疗器械通用名称命名指导原则》，首次明确侵入式或植入式脑机接口产品统一按第三类医疗器械管理（[2026年中产业观察｜脑机接口应用加速推广 投资迎来爆发式增长（新华网）](http://www.news.cn/tech/20260715/3e1ab16070994f3dbf6d6057e93a2fb0/c.html)）。
 - **Neuralink**：据其 2026 年 1 月“Two Years of Telepathy”更新，全球已有 21 名受试者（Neuralnauts）入组，涵盖美国、加拿大、阿联酋与英国（[Two Years of Telepathy（Neuralink）](https://neuralink.com/updates/two-years-of-telepathy/)）。公开报道与受试者追踪称，截至 2026 年中累计至少 26 人（[Neuralink Human Trials Timeline 2024–2026](https://aitimeline.in/neuralink-human-trials-timeline-2024-2026-7094/)）。英国 GB-PRIME 研究截至 2026 年 1 月已有 7 名患者参与，手术于 2025 年 10 月至 12 月间于伦敦 UCLH 完成（[Seven patients now participating in Neurolink trial（UCLH BRC）](https://www.uclhospitals.brc.nihr.ac.uk/news/seven-patients-now-participating-neurolink-trial)）。其 VOICE 项目受试者可实现“用思维说话”（[Infobae 报道](https://www.infobae.com/tecno/2026/09/18/elon-musk-revela-video-de-paciente-comunicandose-gracias-a-implante-cerebral-de-neuralink/)）。
+- **Synchron 血管内 BCI 推进关键性试验**：Synchron 的血管内支架电极（Stentrode）通过血管而非开颅抵达大脑，已在 SWITCH 等研究中植入约 10 名患者，其中 SWITCH 试验 4 名患者实现 85.2% 的运动解码准确率且无严重不良事件；公司计划 2026 年推进关键性临床试验，并于 2026 年 4 月在墨尔本启动 FOCUS-AU 试验（新增 10 名患者）（[Live in the Future: Apple Built a Protocol for Brain Implants](https://liveinthefuture.org/stories/apple-bci-protocol-fewer-than-100-users)、[Tech Times: Synchron Brain Implant Targets 2026 Pivotal Trial](https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm)）。
 
 ## 核心技术与关键概念
 
 - **信号采集路径**：侵入式（皮层内电极阵列，信号质量高但需开颅）、半侵入式（血管内支架电极，经颈静脉植入）、非侵入式（头皮 EEG/fNIRS，安全但信噪比低）。
 - **代表性半侵入式器件**：Synchron 的 Stentrode 是一种自膨胀镍钛合金支架电极阵列（8 mm × 40 mm），集成 16 个周向排列、直径 0.5 mm 的电极，经颈静脉输送并部署于矢状窦（[Emerging Neural Recording and Neurostimulation Technologies Based on Brain–Computer Interface（PMC）](https://pmc.ncbi.nlm.nih.gov/articles/PMC13077214/)）。据相关报道，Synchron 于 2026 年 6 月推出 Stentrode Home Edition，将该血管内 BCI 平台从临床试验环境拓展到受监督的家庭使用场景（[Synchron Launches Stentrode Home Edition](https://neurotech.com/news/2026-06-11-synchron-launches-stentrode-home-edition-expanding-bci-acces)）。
+- **电极数量与安全性权衡**：Neuralink 采用机器人植入的皮层内电极（N1 植入体，1,024 电极）追求高通道数，Synchron 则以低通道数（Stentrode 约 16 电极）换取血管内微创与同行评议的安全记录，两条路线各有取舍（[Live in the Future: Neuralink Has 1,024 Electrodes and 21 Patients](https://liveinthefuture.org/stories/bci-electrode-count-vs-safety-data)）。
 - **解码与刺激**：BCI 系统通常包含信号采集、特征提取、机器学习解码与执行/反馈四环节；应用方向包括运动功能代偿（意念打字、控制外部设备）、言语解码、视觉重建与神经调控。
 
 ## 代表性项目 / 公司 / 产品
@@ -30,6 +32,7 @@
 - 市场规模：赛迪顾问预计到 2028 年中国脑机接口市场规模将达 61.4 亿元，2024–2028 年 CAGR 为 17.7%（新华网报道）。另有报告估计 2026 年中国脑机接口市场规模有望突破 50 亿元（[报告：脑机接口步入“黄金窗口期”，2026年成规模化应用元年（新京报）](https://m.bjnews.com.cn/detail/1775035599129514.html)）。
 - 融资：据中国商报统计，2026 年第一季度国内脑机接口领域发生 17 起融资、金额约 38 亿元，单季规模已超过 2025 年全年；上半年融资超 60 起、总额突破 70 亿元（[新浪财经文章](https://finance.sina.com.cn/roll/2026-08-20/doc-ininynce7939396.shtml.md)）。上海主动科技完成 3.3 亿元天使轮融资，刷新国内脑机接口领域天使轮纪录（同上）。
 - Neuralink 入组人数：公司口径 21 人，外部追踪口径 ≥26 人，存在多口径差异。
+- Synchron SWITCH 试验：4 名患者，85.2% 运动解码准确率，零严重不良事件；累计植入约 10 名患者（[Live in the Future](https://liveinthefuture.org/stories/apple-bci-protocol-fewer-than-100-users)）。
 
 ## 趋势与争议
 
@@ -55,3 +58,6 @@
 14. [报告：脑机接口步入“黄金窗口期”，2026年成规模化应用元年（新京报）](https://m.bjnews.com.cn/detail/1775035599129514.html)
 15. [新浪财经文章：2026 年脑机接口融资额](https://finance.sina.com.cn/roll/2026-08-20/doc-ininynce7939396.shtml.md)
 16. [报告：2026年前三月中国脑机接口融资已超去年全年（中国青年报）](https://m.cyol.com/gb/articles/2026-04/02/content_LgXlnmfG7P.html)
+17. [Live in the Future: Apple Built a Protocol for Brain Implants](https://liveinthefuture.org/stories/apple-bci-protocol-fewer-than-100-users)
+18. [Tech Times: Synchron Brain Implant Targets 2026 Pivotal Trial](https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm)
+19. [Live in the Future: Neuralink Has 1,024 Electrodes and 21 Patients](https://liveinthefuture.org/stories/bci-electrode-count-vs-safety-data)

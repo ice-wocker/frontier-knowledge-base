@@ -20,6 +20,10 @@ NIST 明确：FIPS 203、FIPS 204 与 FIPS 205 于 2024 年 8 月 13 日发布�
 
 第四轮标准化状态报告（IR 8545）梳理了评估与筛选过程，确认 HQC 是唯一将被标准化的密钥建立类算法，NIST 将基于 HQC 制定标准以补充并多样化其密钥建立组合（[Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=959556)）。同期，NIST 于 2025 年 1 月发布 KEM 指南 SP 800-227 草案征求意见。
 
+### 迁移要求与标准化延伸
+
+美国已通过行政令（M-26-15）要求联邦系统迁移至 NIST 批准的 PQC 标准，并要求迁移计划与 NIST IR 8547 对齐（[美国后量子密码迁移行政令解读](https://www.secrss.com/articles/91993)）。NIST NCCoE 的 PQC 迁移项目聚焦两条工作线——「密码可见性与风险管理」（构建并维护全面的密码清单）与互操作性/基准测试（[FAQ about Post-Quantum Cryptography — NIST](https://pages.nist.gov/nccoe-migration-post-quantum-cryptography/FAQ/index.html)）。在标准化延伸方面，ML-KEM 正被纳入 ISO/IEC 18033-2，ML-DSA 与 SLH-DSA 拟标准化为 ISO/IEC 14888-5/6（[Migration to Post-Quantum Cryptography — NIST](https://csrc.nist.gov/csrc/media/presentations/2026/mpts2026-3b1/images-media/mpts2026-3b1-slides-nist-pqc-moody.pdf)）。
+
 ### TLS 1.3 的混合密钥交换
 
 IETF 草案 draft-ietf-tls-ecdhe-mlkem 定义了 TLS 1.3 的三种混合密钥协商机制——X25519MLKEM768、SecP256r1MLKEM768 与 SecP384r1MLKEM1024——将后量子 ML-KEM 与 ECDHE（椭圆曲线 Diffie-Hellman 临时密钥交换）组合（[Post-quantum hybrid ECDHE-MLKEM Key Agreement for TLSv1.3](https://datatracker.ietf.org/doc/draft-ietf-tls-ecdhe-mlkem/)）。混合方案的工程价值在于：即使 PQC 算法后来被证明存在缺陷，经典 ECDHE 仍提供兜底安全性。

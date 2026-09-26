@@ -55,7 +55,7 @@
 
 ## 趋势与争议
 
-- **分发版本与许可争议的后续影响**：Redis 与 Valkey 形成并存生态，Valkey 以 Linux Foundation 治理与「更省内存/更低基础设施成本」为卖点（[linuxfoundation.org](https://www.linuxfoundation.org/press/valkey-enhances-efficiency-security-and-modular-performance-with-9.1-release-and-new-ecosystem-integrations)）；Redis 则通过原生数据类型与 AI 相关能力（vector set）强化差异化（[redis.io](https://redis.io:8443/blog/redis-8-ga/)）。
+- **分发版本与许可争议的后续影响**：Redis 8 起提供三许可——RSALv2、SSPLv1 与 OSI 认可的 AGPLv3（[Licenses — Redis](https://redis.io/legal/licenses/)）；Valkey 由 Linux Foundation 支持、采用宽松的 BSD 3-Clause，定位为永久开源的高性能键值存储（[Valkey](https://valkey.io/)、[What is Valkey?](https://redis.io/blog/what-is-valkey/)）。Redis 与 Valkey 形成并存生态，Valkey 以 Linux Foundation 治理与「更省内存/更低基础设施成本」为卖点（[linuxfoundation.org](https://www.linuxfoundation.org/press/valkey-enhances-efficiency-security-and-modular-performance-with-9.1-release-and-new-ecosystem-integrations)）；Redis 则通过原生数据类型与 AI 相关能力（vector set）强化差异化（[redis.io](https://redis.io:8443/blog/redis-8-ga/)）。
 - **「缓存即数据库」的边界**：Redis 8 引入更多数据结构与查询能力，使缓存层与数据层职责边界更模糊，其 beta 状态也提示 API 仍可能变化（[redis.io](https://redis.io/docs/latest/develop/whats-new/8-0/)）。
 - **一致性成本**：客户端追踪、代际失效与分布式锁都能提升一致性精度，但分别引入协议依赖、惊群与额外延迟，不存在零成本的「精确失效」（[redisson.pro](https://redisson.pro/glossary/cache-invalidation.html)、[calmops.com](https://calmops.com/devops/caching-strategies-redis-cdn-application-cache/)）。
 - **本地缓存的一致性风险**：多实例各自持有 L1 副本会造成一致性难题，因此多层方案通常把一致性职责交给 L2，并对 L1 采用短 TTL + 抖动（[codewithyoha.com](https://codewithyoha.com/blogs/mastering-advanced-caching-redis-caffeine-and-multi-layer-architectures)、[besthub.dev](https://www.besthub.dev/articles/prevent-cache-avalanche-with-multi-level-caffeine-redis-high-availability-design-d3d0dee62adf)）。
@@ -85,3 +85,5 @@
 20. [Spring Boot Caching: Multi-Level Cache with Caffeine + Redis](https://blog.devops-monk.com/2026/05/spring-boot-caching-caffeine-redis/)
 21. [Prevent Cache Avalanche with Multi-Level Caffeine + Redis: High-Availability Design](https://www.besthub.dev/articles/prevent-cache-avalanche-with-multi-level-caffeine-redis-high-availability-design-d3d0dee62adf)
 22. [Caching KMS data keys in multi-thread environments](https://aws.amazon.com/blogs/security/caching-kms-data-keys-in-multi-thread-environments-per-tenant-encryption-for-event-driven-systems-at-scale/)
+23. [Licenses — Redis](https://redis.io/legal/licenses/)
+24. [What is Valkey? — Redis](https://redis.io/blog/what-is-valkey/)

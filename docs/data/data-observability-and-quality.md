@@ -16,6 +16,8 @@
 
 **监控工具的层次分化。** 在异常检测技术栈上，云厂商提供托管选项（如 AWS Lookout for Metrics、Azure Anomaly Detector），而 Monte Carlo 这类产品把 AI 异常检测专门面向数据质量与管道可靠性（[How AI Anomaly Detection Catches the Problems Your Tests Miss](https://montecarlo.ai/blog-ai-anomaly-detection)）。
 
+**AI 代理进入数据库运维。** Google Cloud 在 Next '26 发布 Agentic Data Cloud，并推出 Database Onboarding Agent 与 Database Observability Agent 两个 AI 数据库代理，分别覆盖 Day 0 配置与 Day 1/2 的监控运维，成为可观测性能力向数据库运维延伸的代表（[Introducing Database Operations Agents](https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents)、[What's new with Databases](https://cloud.google.com/blog/products/databases/whats-new-for-google-cloud-databases-at-next26)）。
+
 ## 核心技术与关键概念
 
 **数据停机（Data Downtime）与其分解。** 数据停机指数据处于部分、错误、缺失或不准确的时段，是被广泛用作数据质量 KPI 的指标，可按整体、域、数据产品甚至表级别度量（[A Leader's Data Quality Metrics Guide](https://info.montecarlodata.com/hubfs/Assets%20-%20Guides,%20Ebooks,%20Reports/Cheat%20Sheet%20A%20Leaders%20Data%20Quality%20Metrics%20Guide.pdf)）。其可分解为 `data downtime = incidents × TTD × TTR`，其中 incidents 为真实故障数（不含计划变更）、TTD 为发现时间、TTR 为解决时间；实践建议若只改善一项，应优先改善 TTD，因为更快的发现会缩小影响范围（[Data Quality in 2026](https://prospeo.io/s/data-quality)）。
@@ -59,3 +61,5 @@
 8. [Data Downtime — logiciel.io glossary](https://logiciel.io/tech-glossary/data-downtime)
 9. [Data SLA — logiciel.io glossary](https://logiciel.io/tech-glossary/data-sla)
 10. [Acceldata vs Monte Carlo — modern-datatools](https://www.modern-datatools.com/compare/acceldata-vs-monte-carlo)
+11. [Introducing Database Operations Agents — Google Cloud](https://cloud.google.com/blog/products/databases/deep-dive-on-new-ai-powered-database-agents)
+12. [What's new with Databases: Powering the agentic future — Google Cloud](https://cloud.google.com/blog/products/databases/whats-new-for-google-cloud-databases-at-next26)
