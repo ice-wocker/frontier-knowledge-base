@@ -53,6 +53,12 @@ def collect_urls():
     return found
 
 
+# 这些状态码是服务端临时故障（过载/网关抖动），不代表链接失效。
+# 早期版本把它们直接判死，结果一次 503 就能让整轮 CI 变红——
+# 误报的 CI 等于没有 CI。
+TRANSIENT_CODES = (500, 502, 503, 504)
+
+
 def _attempt(url, timeout):
     req = urllib.request.Request(url, headers={"User-Agent": UA}, method="GET")
     try:
@@ -62,6 +68,10 @@ def _attempt(url, timeout):
         # 401/403/405/406/429 通常是反爬，不代表链接失效
         if e.code in (401, 403, 405, 406, 429, 999):
             return "unknown", f"HTTP {e.code}（反爬，跳过）"
+        # 5xx 是服务端临时故障，重试后再归入存疑
+        if e.code in TRANSIENT_CODES:
+            return "retry", f"HTTP {e.code}（服务端临时故障）"
+        # 404 / 410 等才是真死链
         return "dead", f"HTTP {e.code}"
     except Exception as e:  # noqa: BLE001
         return "error", f"{type(e).__name__}: {e}"
@@ -70,16 +80,22 @@ def _attempt(url, timeout):
 def check(url, timeout, retries=2):
     """返回 (url, status, detail)。status: ok / dead / unknown
 
-    网络抖动（TLS 握手超时、连接被重置）很常见，直接判死会产生大量误报，
-    而误报的 CI 等于没有 CI。所以除了明确的 4xx/5xx，其余错误都重试。
+    网络抖动（TLS 握手超时、连接被重置）和 5xx 服务端临时故障都很常见，
+    直接判死会产生大量误报，而误报的 CI 等于没有 CI。所以只有明确的
+    404 / 410 之类才判死；连接错误与 5xx 都重试，重试后仍失败归为「存疑」。
     """
     last = ("error", "no attempt")
     for attempt in range(retries + 1):
         status, detail = _attempt(url, timeout)
-        if status != "error":
+        if status == "dead":
             return url, status, detail
+        if status == "unknown":
+            return url, status, detail
+        # ok / error / retry 的 detail 留到最后兜底
         last = (status, detail)
-    # 重试后仍然连不上：无法区分「站点挂了」和「网络抖动」，
+        if status == "ok":
+            return url, status, detail
+    # 重试后仍然连不上或仍是 5xx：无法区分「站点挂了」和「网络抖动」，
     # 保守归为存疑，只在汇总里列出，不让 CI 失败
     return url, "unknown", f"{last[1]}（重试 {retries} 次后仍失败）"
 

@@ -87,7 +87,7 @@ AI 编程工具已从「补全代码」演进为「自主完成任务的编程�
 
 **智能体计费的「隐性成本」**：GitHub 2026 年 9 月的计费调整取消了企业客户的促销额度期，席位价不变（Business 每用户每月 19 美元、Enterprise 39 美元，各含固定 AI Credits 额度），但超出额度部分单独计费——每周运行十次重度智能体会话的平台团队可能耗尽为数千名轻度用户预留的额度，使按席位估算账单变得不可靠（[GitHub Copilot's Real Costs Surface After September 1 Billing Shift](https://autonainews.com/github-copilots-real-costs-surface-after-september-1-billing-shift/)）。
 
-**工具份额**：基于 JetBrains 2026 调查的解读称，Claude Code 在专业开发者中的采用率已超过 GitHub Copilot（[Claude Code Surpasses GitHub Copilot: 90% of Developers Adopt AI Coding](https://dev.to/tidiane_stano_c6b88f8b685/claude-code-surpasses-github-copilot-90-of-developers-adopt-ai-coding-4ck2)）。
+**工具份额**：JetBrains《2026 开发者生态调查》显示，90% 的专业开发者每周至少使用一次 AI 编程智能体，其中 Claude Code 与 GitHub Copilot 是最主要的两款（[AI Coding Agents: Adoption Trends — JetBrains](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/)）。
 
 **自研与集成模型**：Cursor 提供自研 Composer 系列（Composer 2 基于 Moonshot Kimi K2.5 模型）；Copilot 支持多模型，并可接入自定义 agent skills 与 MCP 连接（[AI Coding Models Statistics 2026](https://preuve.ai/blog/ai-coding-models-statistics-2026)、[GitHub Copilot app: The agent-native desktop experience](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)）。
 
@@ -172,7 +172,6 @@ AI 编程工具已从「补全代码」演进为「自主完成任务的编程�
 57. [Securing the AI Coding Pipeline (Part 9)](https://simonroses.com/2026/07/securing-the-ai-coding-pipeline-part-9/)
 58. [AI编程:市场格局、独角兽崛起与中国力量 — 新浪财经](https://cj.sina.com.cn/articles/view/5953189932/162d6782c06704y25k?froms=ttmp)
 59. [Coding task router — CodingSOTA](https://www.codesota.com/code-generation)
-60. [Claude Code Surpasses GitHub Copilot: 90% of Developers Adopt AI Coding — DEV Community](https://dev.to/tidiane_stano_c6b88f8b685/claude-code-surpasses-github-copilot-90-of-developers-adopt-ai-coding-4ck2)
-61. [AI Coding Assistant Statistics 2026: Adoption, Trust & Productivity — Uvik](https://uvik.net/blog/ai-coding-assistant-statistics/)
-62. [AI Coding Statistics 2026: Adoption, Productivity and Market Data — SQ Magazine](https://sqmagazine.co.uk/ai-coding-statistics/)
-63. [GitHub Copilot's Real Costs Surface After September 1 Billing Shift — Autona News](https://autonainews.com/github-copilots-real-costs-surface-after-september-1-billing-shift/)
+60. [AI Coding Assistant Statistics 2026: Adoption, Trust & Productivity — Uvik](https://uvik.net/blog/ai-coding-assistant-statistics/)
+61. [AI Coding Statistics 2026: Adoption, Productivity and Market Data — SQ Magazine](https://sqmagazine.co.uk/ai-coding-statistics/)
+62. [GitHub Copilot's Real Costs Surface After September 1 Billing Shift — Autona News](https://autonainews.com/github-copilots-real-costs-surface-after-september-1-billing-shift/)
