@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # 外链会随时间腐烂，即使仓库没动也要定期体检
+    - cron: '0 3 * * 1'
+
+jobs:
+  index:
+    name: 校验 INDEX.md 是否为最新
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check INDEX.md
+        run: python3 scripts/gen_index.py --check
+
+  links:
+    name: 外链可达性检查
+    runs-on: ubuntu-latest
+    # 4000+ 条外链，全量跑很久；PR 上抽样，定时任务全量
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect link stats
+        run: |
+          python3 - <<'PY'
+          import importlib.util, pathlib
+          spec = importlib.util.spec_from_file_location("cl", "scripts/check_links.py")
+          m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          urls = m.collect_urls()
+          print(f"文档数: {len(list(pathlib.Path('docs').rglob('*.md')))}")
+          print(f"唯一外链: {len(urls)}")
+          PY
+
+      # 定时任务：全量检查（--limit 0 表示不限制）
+      - name: Check all links (scheduled)
+        if: github.event_name == 'schedule'
+        run: python3 scripts/check_links.py --timeout 20 --workers 24
+
+      # PR / push：抽样检查，保证反馈足够快
+      - name: Check sample links
+        if: github.event_name != 'schedule'
+        run: python3 scripts/check_links.py --limit 300 --timeout 15 --workers 24
