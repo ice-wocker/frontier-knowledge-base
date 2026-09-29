@@ -8,6 +8,7 @@ on:
     paths:
       - 'docs/**'
       - 'scripts/build_site.py'
+      - 'scripts/check_site.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -31,6 +32,9 @@ jobs:
           python-version: '3.12'
       - name: Build static site
         run: python3 scripts/build_site.py
+      # 发布前先自检：宁可不上线，也不要让「搜索坏了 / 导航 404」的产物出去
+      - name: Check site output
+        run: python3 scripts/check_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

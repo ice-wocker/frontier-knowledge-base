@@ -33,13 +33,10 @@ jobs:
       # 而不是等合并后 Pages 发布挂掉。
       - name: Build site
         run: python3 scripts/build_site.py
-      - name: Assert output
-        run: |
-          test -f site/index.html
-          test -f site/search.json
-          pages=$(find site -name '*.html' | wc -l)
-          echo "生成 HTML 页面数: $pages"
-          test "$pages" -gt 160
+      # 站点自检：站内引用、canonical/sitemap 一致性、检索链路完整性。
+      # 这一步专门用来接住「构建成功但页面/搜索坏掉」这类静默故障。
+      - name: Check site output
+        run: python3 scripts/check_site.py
 
   links:
     name: 外链可达性检查
