@@ -21,6 +21,26 @@ jobs:
       - name: Check INDEX.md
         run: python3 scripts/gen_index.py --check
 
+  site:
+    name: 校验站点能否构建
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # 站点是 docs/ 的投影，构建失败必须在 PR 阶段就暴露，
+      # 而不是等合并后 Pages 发布挂掉。
+      - name: Build site
+        run: python3 scripts/build_site.py
+      - name: Assert output
+        run: |
+          test -f site/index.html
+          test -f site/search.json
+          pages=$(find site -name '*.html' | wc -l)
+          echo "生成 HTML 页面数: $pages"
+          test "$pages" -gt 160
+
   links:
     name: 外链可达性检查
     runs-on: ubuntu-latest

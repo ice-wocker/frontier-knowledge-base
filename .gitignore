@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# 站点构建产物（由 scripts/build_site.py 生成，不进版本库）
+site/

@@ -13,8 +13,12 @@
 
 ## 快速导航
 
+- **[在线站点](https://ice-wocker.github.io/frontier-knowledge-base/)** —— 带全文搜索的网页版，163 篇文档按领域浏览
 - **[完整索引（按领域）](INDEX.md)** —— 163 篇文档的自动生成清单，含最后更新日期与概要
 - 下方向领域目录为人工精选的详细列表
+
+> 站点由 `scripts/build_site.py` 从 `docs/` 渲染生成（零依赖、纯静态），
+> 合并进 `main` 后自动发布。`docs/` 的 Markdown 始终是唯一真相源。
 
 ## 目录
 
