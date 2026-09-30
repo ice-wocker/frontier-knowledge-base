@@ -8,6 +8,8 @@ on:
     paths:
       - 'docs/**'
       - 'scripts/build_site.py'
+      - 'scripts/kb.py'
+      - 'scripts/check_site.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -31,6 +33,9 @@ jobs:
           python-version: '3.12'
       - name: Build static site
         run: python3 scripts/build_site.py
+      # 宁可不上线，也不让坏产物出去：站内链接 / 索引 / sitemap 都要验。
+      - name: Check site artifacts
+        run: python3 scripts/check_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
