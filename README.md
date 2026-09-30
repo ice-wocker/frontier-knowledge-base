@@ -13,12 +13,63 @@
 
 ## 快速导航
 
-- **[在线站点](https://ice-wocker.github.io/frontier-knowledge-base/)** —— 带全文搜索的网页版，163 篇文档按领域浏览
+- **[在线站点](https://ice-wocker.github.io/frontier-knowledge-base/)** —— 带 BM25 全文检索、标签索引、相关推荐的网页版
 - **[完整索引（按领域）](INDEX.md)** —— 163 篇文档的自动生成清单，含最后更新日期与概要
+- **[标签索引](https://ice-wocker.github.io/frontier-knowledge-base/tags.html)** —— 按术语聚合的横向入口
+- **[RSS 订阅](https://ice-wocker.github.io/frontier-knowledge-base/feed.xml)** —— 按更新时间追踪新增与更新
 - 下方向领域目录为人工精选的详细列表
 
 > 站点由 `scripts/build_site.py` 从 `docs/` 渲染生成（零依赖、纯静态），
 > 合并进 `main` 后自动发布。`docs/` 的 Markdown 始终是唯一真相源。
+
+## 不止是「给人看」
+
+知识库除了网页，还会导出一批**机器可读**的产物——检索索引、文档清单、关联图。
+这样它既能被人浏览，也能被脚本、分析工具、AI 应用直接消费，不必先爬 HTML：
+
+| 产物 | 内容 | 用途 |
+| --- | --- | --- |
+| [`search-index.json`](https://ice-wocker.github.io/frontier-knowledge-base/search-index.json) | 倒排索引（词 → 文档/词频）+ IDF | 浏览器端 BM25 检索；也可离线复现排序 |
+| [`docs.json`](https://ice-wocker.github.io/frontier-knowledge-base/docs.json) | 全部文档的标题/摘要/标签/章节/来源数/相关文档 | 二次开发、批量分析与索引 |
+| [`graph.json`](https://ice-wocker.github.io/frontier-knowledge-base/graph.json) | 文档关联图（节点 + 带权边） | 可视化、聚类、发现知识盲区 |
+| [`tags.json`](https://ice-wocker.github.io/frontier-knowledge-base/tags.json) | 标签 → 文档 的聚合 | 按主题横向检索 |
+| [`feed.xml`](https://ice-wocker.github.io/frontier-knowledge-base/feed.xml) | RSS（最近 30 篇，按更新时间） | 订阅更新 |
+
+> 全部由 `scripts/build_site.py` 在构建时顺带产出，无额外服务、无外部依赖。
+
+## 检索是怎么做的
+
+站点不引任何检索库，检索跑在浏览器里，靠的是一份预生成的倒排索引：
+
+- **中文分词**：单字 + 相邻二字组合（bigram）。没有分词器时，这是「召回」
+  与「索引体积」之间最稳的折中——bigram 能表达「向量检索」这类复合概念，
+  又不像 trigram 那样把索引撑爆。
+- **排序**：BM25（k1=1.5, b=0.75），标题命中额外加权。
+- **裁剪**：只出现 1 篇的词（中文 bigram 的主要噪声）、以及几乎每篇都有的
+  超高频词都不入索引。实测这一步把索引从 3.8 MB 压到 1.4 MB（gzip 约 0.5 MB），
+  检索质量零变化。
+- **按需加载**：首屏不拉索引（0 请求），第一次聚焦/输入时才加载，单次按键只查候选集。
+
+## 自动化的质量守门
+
+内容维度不可靠是这个库最大的风险——163 篇（还会更多）靠人维护必然漂移。
+所以有三道自动检查，任何一道不过 CI 就红：
+
+| 脚本 | 管什么 |
+| --- | --- |
+| `scripts/check_docs.py` | **里面写的东西还成立吗**：每篇是否覆盖必备内容槽位（概述/进展/技术/趋势/来源）、参考来源是否够（≥5）、日期格式、标题重复/过长、正文过短、未来日期 |
+| `scripts/check_site.py` | **构建成功但站点坏掉**：站内链接是否有效、检索索引 docId 是否越界、docs.json 指向的页面是否存在、sitemap/canonical/RSS 是否同源 |
+| `scripts/check_links.py` | **外面的链接还活着吗**：4000+ 条外链可达性；5xx 视为服务端临时故障并重试，只有 404/410 才算死链 |
+
+本地一把跑完：
+
+```bash
+python3 scripts/gen_index.py --check    # INDEX.md 是否最新
+python3 scripts/check_docs.py           # 内容质量
+python3 scripts/build_site.py           # 构建站点
+python3 scripts/check_site.py           # 站点自检
+python3 scripts/check_links.py --limit 300   # 外链抽样
+```
 
 ## 目录
 

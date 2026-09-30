@@ -21,8 +21,21 @@ jobs:
       - name: Check INDEX.md
         run: python3 scripts/gen_index.py --check
 
+  docs:
+    name: 内容质量校验
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # 校验每篇是否覆盖必备内容槽位、来源是否够、日期/标题有无异常。
+      # 这管的是「里面写的东西还成立吗」，与外链检查互补。
+      - name: Check docs
+        run: python3 scripts/check_docs.py
+
   site:
-    name: 校验站点能否构建
+    name: 校验站点能否构建 + 产物自检
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,10 +46,14 @@ jobs:
       # 而不是等合并后 Pages 发布挂掉。
       - name: Build site
         run: python3 scripts/build_site.py
+      # 构建成功不等于站点可用：站内链接、索引 docId、sitemap 同源都要验。
+      - name: Check site artifacts
+        run: python3 scripts/check_site.py
       - name: Assert output
         run: |
           test -f site/index.html
-          test -f site/search.json
+          test -f site/search-index.json
+          test -f site/docs.json
           pages=$(find site -name '*.html' | wc -l)
           echo "生成 HTML 页面数: $pages"
           test "$pages" -gt 160
