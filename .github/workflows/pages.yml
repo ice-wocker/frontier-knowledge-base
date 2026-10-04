@@ -36,7 +36,7 @@ jobs:
       # 宁可不上线，也不让坏产物出去：站内链接 / 索引 / sitemap 都要验。
       - name: Check site artifacts
         run: python3 scripts/check_site.py
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
