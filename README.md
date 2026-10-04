@@ -1,5 +1,9 @@
 # 前沿科技知识库（Frontier Tech Knowledge Base）
 
+[![CI](https://github.com/ice-wocker/frontier-knowledge-base/actions/workflows/ci.yml/badge.svg)](https://github.com/ice-wocker/frontier-knowledge-base/actions) [![Release](https://img.shields.io/github/v/release/ice-wocker/frontier-knowledge-base)](https://github.com/ice-wocker/frontier-knowledge-base/releases) [![GitHub stars](https://img.shields.io/github/stars/ice-wocker/frontier-knowledge-base?style=social)](https://github.com/ice-wocker/frontier-knowledge-base/stargazers)
+
+> **English:** A pure-Markdown frontier-tech knowledge base with 163 topic docs across 9 domains, every fact sourced with links, plus a static site with BM25 search and machine-readable indexes.
+
 > 最后更新：2026-09-26 ｜ 收录 163 篇专题文档 ｜ 全部内容基于公开网络资料整理，逐条附来源链接
 
 一个纯 Markdown 的前沿科技知识库，覆盖人工智能、硬件与半导体、软件工程、数据工程、网络安全、基础科学、新兴科技、产业与社会等九大领域。所有内容均通过公开网络检索整理而成，关键事实在正文中就地标注来源，每篇文末设有「参考来源」章节列出完整链接清单，便于逐条回溯核验。
@@ -311,3 +315,6 @@ python3 scripts/check_links.py --limit 300   # 外链抽样
 1. 任何事实性修改都必须附带可公开访问的来源链接；
 2. 数据需注明对应时间点；
 3. 保持「客观陈述 + 来源可追溯」的原则，不引入主观判断。
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=ice-wocker/frontier-knowledge-base&type=Date)](https://star-history.com/#ice-wocker/frontier-knowledge-base&Date)
